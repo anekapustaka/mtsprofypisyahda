@@ -1,222 +1,297 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Situs Sedang Dalam Pemeliharaan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="logocv.png" type="image/png">
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: linear-gradient(135deg, #dce9ff, #a7c7ff);
-      font-family: 'Inter', Arial, sans-serif;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 22px;
-      color: #0b6b30;
-      font-weight: 600;
-      margin-top: 20px;
-    }
-
-    .gear-box {
-      position: relative;
-      width: 180px;
-      height: 180px;
-    }
-
-    svg {
-      width: 100%;
-      height: auto;
-    }
-
-    .gearb {
-      width: 180px;
-      height: 180px;
-      margin-bottom: 20px;
-      position: relative;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    
-    .machine {
-      width: 60vmin;
-      height: auto;
-      fill: #0b6b30; 
-    }
-
-    .small-shadow, .medium-shadow, .large-shadow {
-      fill: rgba(0, 0, 0, 0.05); }
-    
-    .small {
-      -webkit-animation: counter-rotation 2.5s infinite linear;
-    	   -moz-animation: counter-rotation 2.5s infinite linear;
-    	     -o-animation: counter-rotation 2.5s infinite linear;
-    	        animation: counter-rotation 2.5s infinite linear;
-      -webkit-transform-origin: 100.136px 225.345px;
-          -ms-transform-origin: 100.136px 225.345px;
-              transform-origin: 100.136px 225.345px; }
-    
-    .small-shadow {
-      -webkit-animation: counter-rotation 2.5s infinite linear;
-    	   -moz-animation: counter-rotation 2.5s infinite linear;
-    	     -o-animation: counter-rotation 2.5s infinite linear;
-    	        animation: counter-rotation 2.5s infinite linear;
-      -webkit-transform-origin: 110.136px 235.345px;
-          -ms-transform-origin: 110.136px 235.345px;
-              transform-origin: 110.136px 235.345px; }
-    
-    .medium {
-      -webkit-animation: rotation 3.75s infinite linear;
-    	   -moz-animation: rotation 3.75s infinite linear;
-    	     -o-animation: rotation 3.75s infinite linear;
-    	        animation: rotation 3.75s infinite linear;
-      -webkit-transform-origin: 254.675px 379.447px;
-          -ms-transform-origin: 254.675px 379.447px;
-              transform-origin: 254.675px 379.447px; }
-    
-    .medium-shadow {
-      -webkit-animation: rotation 3.75s infinite linear;
-    	   -moz-animation: rotation 3.75s infinite linear;
-    	     -o-animation: rotation 3.75s infinite linear;
-    	        animation: rotation 3.75s infinite linear;
-      -webkit-transform-origin: 264.675px 389.447px;
-          -ms-transform-origin: 264.675px 389.447px;
-              transform-origin: 264.675px 389.447px; }
-    
-    .large {
-      -webkit-animation: counter-rotation 5s infinite linear;
-         -moz-animation: counter-rotation 5s infinite linear;
-    	     -o-animation: counter-rotation 5s infinite linear;
-            	animation: counter-rotation 5s infinite linear;
-      -webkit-transform-origin: 461.37px 173.694px;
-          -ms-transform-origin: 461.37px 173.694px;
-              transform-origin: 461.37px 173.694px; }
-    
-    .large-shadow {  
-      -webkit-animation: counter-rotation 5s infinite linear;
-    	   -moz-animation: counter-rotation 5s infinite linear;
-    	     -o-animation: counter-rotation 5s infinite linear;
-    	        animation: counter-rotation 5s infinite linear;
-      -webkit-transform-origin: 471.37px 183.694px;
-          -ms-transform-origin: 471.37px 183.694px;
-              transform-origin: 471.37px 183.694px; }
-    
-    @-webkit-keyframes rotation {
-        from {-webkit-transform: rotate(0deg);}
-        to   {-webkit-transform: rotate(359deg);}
-    }
-    @-moz-keyframes rotation {
-        from {-moz-transform: rotate(0deg);}
-        to   {-moz-transform: rotate(359deg);}
-    }
-    @-o-keyframes rotation {
-        from {-o-transform: rotate(0deg);}
-        to   {-o-transform: rotate(359deg);}
-    }
-    @keyframes rotation {
-        from {transform: rotate(0deg);}
-        to   {transform: rotate(359deg);}
-    }
-    
-    @-webkit-keyframes counter-rotation {
-        from {-webkit-transform: rotate(359deg);}
-        to   {-webkit-transform: rotate(0deg);}
-    }
-    @-moz-keyframes counter-rotation {
-        from {-moz-transform: rotate(359deg);}
-        to   {-moz-transform: rotate(0deg);}
-    }
-    @-o-keyframes counter-rotation {
-        from {-o-transform: rotate(359deg);}
-        to   {-o-transform: rotate(0deg);}
-    }
-    @keyframes counter-rotation {
-        from {transform: rotate(359deg);}
-        to   {transform: rotate(0deg);}
-    }
-
-
-    .refresh-btn {
-      margin-top: 25px;
-      padding: 12px 28px;
-      background: #0b6b30;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: 0.3s ease;
-    }
-
-    .refresh-btn:hover {
-      background: #0b6b30;
-      transform: scale(1.04);
-    }
-
-    .footer-note {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #555;
-      opacity: 0.8;
-    }
-    
-    @media (max-width: 480px) {
-      h1 { font-size: 20px; padding: 0 15px; }
-      .gearb { width: 140px; height: 140px; }
-      .refresh-btn { padding: 10px 24px; font-size: 14px; }
-    }
-  </style>
+  <title>MTs Prof YPI Syahda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="gearb">
-    <svg class="machine"xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 645 526">
-      <defs/>
-      <g>
-        <path  x="-173,694" y="-173,694" class="large-shadow" d="M645 194v-21l-29-4c-1-10-3-19-6-28l25-14 -8-19 -28 7c-5-8-10-16-16-24L602 68l-15-15 -23 17c-7-6-15-11-24-16l7-28 -19-8 -14 25c-9-3-18-5-28-6L482 10h-21l-4 29c-10 1-19 3-28 6l-14-25 -19 8 7 28c-8 5-16 10-24 16l-23-17L341 68l17 23c-6 7-11 15-16 24l-28-7 -8 19 25 14c-3 9-5 18-6 28l-29 4v21l29 4c1 10 3 19 6 28l-25 14 8 19 28-7c5 8 10 16 16 24l-17 23 15 15 23-17c7 6 15 11 24 16l-7 28 19 8 14-25c9 3 18 5 28 6l4 29h21l4-29c10-1 19-3 28-6l14 25 19-8 -7-28c8-5 16-10 24-16l23 17 15-15 -17-23c6-7 11-15 16-24l28 7 8-19 -25-14c3-9 5-18 6-28L645 194zM471 294c-61 0-110-49-110-110S411 74 471 74s110 49 110 110S532 294 471 294z"/>
-      </g>
-      <g>
-        <path x="-136,996" y="-136,996" class="medium-shadow" d="M402 400v-21l-28-4c-1-10-4-19-7-28l23-17 -11-18L352 323c-6-8-13-14-20-20l11-26 -18-11 -17 23c-9-4-18-6-28-7l-4-28h-21l-4 28c-10 1-19 4-28 7l-17-23 -18 11 11 26c-8 6-14 13-20 20l-26-11 -11 18 23 17c-4 9-6 18-7 28l-28 4v21l28 4c1 10 4 19 7 28l-23 17 11 18 26-11c6 8 13 14 20 20l-11 26 18 11 17-23c9 4 18 6 28 7l4 28h21l4-28c10-1 19-4 28-7l17 23 18-11 -11-26c8-6 14-13 20-20l26 11 11-18 -23-17c4-9 6-18 7-28L402 400zM265 463c-41 0-74-33-74-74 0-41 33-74 74-74 41 0 74 33 74 74C338 430 305 463 265 463z"/>
-      </g>
-      <g >
-        <path x="-100,136" y="-100,136" class="small-shadow" d="M210 246v-21l-29-4c-2-10-6-18-11-26l18-23 -15-15 -23 18c-8-5-17-9-26-11l-4-29H100l-4 29c-10 2-18 6-26 11l-23-18 -15 15 18 23c-5 8-9 17-11 26L10 225v21l29 4c2 10 6 18 11 26l-18 23 15 15 23-18c8 5 17 9 26 11l4 29h21l4-29c10-2 18-6 26-11l23 18 15-15 -18-23c5-8 9-17 11-26L210 246zM110 272c-20 0-37-17-37-37s17-37 37-37c20 0 37 17 37 37S131 272 110 272z"/>
-      </g>
-      <g>
-        <path x="-100,136" y="-100,136" class="small" d="M200 236v-21l-29-4c-2-10-6-18-11-26l18-23 -15-15 -23 18c-8-5-17-9-26-11l-4-29H90l-4 29c-10 2-18 6-26 11l-23-18 -15 15 18 23c-5 8-9 17-11 26L0 215v21l29 4c2 10 6 18 11 26l-18 23 15 15 23-18c8 5 17 9 26 11l4 29h21l4-29c10-2 18-6 26-11l23 18 15-15 -18-23c5-8 9-17 11-26L200 236zM100 262c-20 0-37-17-37-37s17-37 37-37c20 0 37 17 37 37S121 262 100 262z"/>
-      </g>
-      <g>
-        <path x="-173,694" y="-173,694" class="large" d="M635 184v-21l-29-4c-1-10-3-19-6-28l25-14 -8-19 -28 7c-5-8-10-16-16-24L592 58l-15-15 -23 17c-7-6-15-11-24-16l7-28 -19-8 -14 25c-9-3-18-5-28-6L472 0h-21l-4 29c-10 1-19 3-28 6L405 9l-19 8 7 28c-8 5-16 10-24 16l-23-17L331 58l17 23c-6 7-11 15-16 24l-28-7 -8 19 25 14c-3 9-5 18-6 28l-29 4v21l29 4c1 10 3 19 6 28l-25 14 8 19 28-7c5 8 10 16 16 24l-17 23 15 15 23-17c7 6 15 11 24 16l-7 28 19 8 14-25c9 3 18 5 28 6l4 29h21l4-29c10-1 19-3 28-6l14 25 19-8 -7-28c8-5 16-10 24-16l23 17 15-15 -17-23c6-7 11-15 16-24l28 7 8-19 -25-14c3-9 5-18 6-28L635 184zM461 284c-61 0-110-49-110-110S401 64 461 64s110 49 110 110S522 284 461 284z"/>
-      </g>
-      <g>
-        <path x="-136,996" y="-136,996" class="medium" d="M392 390v-21l-28-4c-1-10-4-19-7-28l23-17 -11-18L342 313c-6-8-13-14-20-20l11-26 -18-11 -17 23c-9-4-18-6-28-7l-4-28h-21l-4 28c-10 1-19 4-28 7l-17-23 -18 11 11 26c-8 6-14 13-20 20l-26-11 -11 18 23 17c-4 9-6 18-7 28l-28 4v21l28 4c1 10 4 19 7 28l-23 17 11 18 26-11c6 8 13 14 20 20l-11 26 18 11 17-23c9 4 18 6 28 7l4 28h21l4-28c10-1 19-4 28-7l17 23 18-11 -11-26c8-6 14-13 20-20l26 11 11-18 -23-17c4-9 6-18 7-28L392 390zM255 453c-41 0-74-33-74-74 0-41 33-74 74-74 41 0 74 33 74 74C328 420 295 453 255 453z"/>
-      </g>
-    </svg>
-</div>
+  <!-- HEADER -->
+  <header>
+	<div class="logo">
+	  <img src="images/logo.png" alt="Logo">
+	  <div class="logo-text">
+		<h2>MTs Prof YPI SYAHDA</h2><br>
+		<span>Dk. Randu, Ds. Temon, Kec. Simo, Kab. Boyolali</span>
+	  </div>
+	</div>
 
-  <h1>Situs MTs Prof. YPI SYAHDA sedang dalam pemeliharaan server</h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="informasi.html">Informasi</a>
+      <a href="daftar.html">Pendaftaran</a>
+	  <a href="about.html">Tentang</a>
+    </nav>
+  </header>
 
-  <button class="refresh-btn" onclick="location.reload()">Muat Ulang</button>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="slides">
+        <div class="slide" style="background-image: url('images/hero1.jpg');"></div>
+        <div class="slide" style="background-image: url('images/hero2.jpg');"></div>
+        <div class="slide" style="background-image: url('images/hero3.jpeg');"></div>
+		<div class="slide" style="background-image: url('images/hero4.jpeg');"></div>
+      </div>
 
-  <div class="footer-note">Halaman akan aktif kembali setelah proses selesai.</div>
+      <div class="hero-content">
+        <h1>“Mencetak Generasi Qur’ani, Berilmu, dan Berdaya Saing Global.”</h1>
+        <button>Informasi SPMB</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISI & MISI -->
+  <div class="judul">
+    <h2>Visi & Misi Madrasah</h2>
+  </div>
+
+  <div class="visi-card">
+    <h4>Visi</h4>
+    <p>Menjadi Madrasah Unggulan yang Mencetak Generasi Berakhlak Qur`ani, Berilmu, Berdaya Saing, dan Berwawasan Keislaman.</p>
+  </div>
+
+  <div class="misi-card">
+    <h4>Misi</h4>
+    <div class="misi-list">
+      <div class="misi-item">Menyelenggarakan pendidikan terpadu antara ilmu agama dan ilmu umum secara seimbang dan berkualitas.</div>
+      <div class="misi-item">Membentuk karakter siswa yang berakhlakul karimah, disiplin, dan bertanggung jawab.</div>
+      <div class="misi-item">Menumbuhkan semangat cinta Al-Qur`an melalui program tahfidz yang berkelanjutan.</div>
+      <div class="misi-item">Mengembangkan potensi siswa melalui pembelajaran aktif, kreatif, dan berbasis teknologi.</div>
+      <div class="misi-item">Menjalin kerja sama dengan orang tua dan masyarakat dalam pembinaan siswa.</div>
+      <div class="misi-item">Menyiapkan lulusan yang siap melanjutkan pendidikan dan menghadapi tantangan zaman.</div>
+      <div class="misi-item">Menanamkan semangat kepemimpinan dan jiwa sosial pada setiap peserta didik.</div>
+      <div class="misi-item">Menghidupkan budaya literasi, numerasi, berpikir kritis, dan penguasaan teknologi.</div>
+      <div class="misi-item">Menyediakan lingkungan belajar yang aman, bersih, nyaman, dan islami.</div>
+      <div class="misi-item">Menanamkan jiwa kewirausahaan melalui kegiatan keterampilan dan pelatihan mandiri.</div>
+      <div class="misi-item">Meningkatkan kualitas guru dan tenaga kependidikan melalui pelatihan rutin.</div>
+    </div>
+  </div>
+  
+ <!-- SAMBUTAN KEPALA MADRASAH -->
+<section id="sambutan">
+  <div class="judul">
+    <h2>Sambutan Kepala Madrasah</h2>
+  </div>
+  <div class="sambutan-container">
+    <!-- Foto Kepala Madrasah -->
+    <div class="sambutan-foto">
+      <img src="images/kepala.jpg" alt="Kepala Madrasah">
+    </div>
+    <!-- Teks Sambutan -->
+    <div class="sambutan-teks">
+      <p>
+        Assalamu’alaikum warahmatullahi wabarakatuh.  
+        Selamat datang di website resmi MTs Prof. YPI Syahda.  
+        Kami berkomitmen mencetak generasi Qur’ani yang berilmu, berakhlak mulia, dan siap bersaing di era global.  
+        Melalui pendidikan yang berkualitas, beragam program unggulan, dan pembinaan karakter yang menyeluruh, kami berharap setiap siswa dapat berkembang secara optimal, kreatif, dan bertanggung jawab.  
+        Semoga website ini menjadi sumber informasi yang bermanfaat bagi orang tua, siswa, dan masyarakat.
+      </p>
+      <p class="penutup">Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
+      <p class="nama-kepala">Dr. H. Dasmadi, S.E., M.M.<br>Kepala MTs Prof. YPI Syahda</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENGAPA MEMILIH MADRASAH -->
+<section id="mengapa" class="mengapa-section">
+  <div class="judul">
+    <h2>Mengapa Harus Memilih Madrasah Kami?</h2>
+  </div>
+
+  <div class="mengapa-list">
+    <div class="mengapa-item">
+      <span class="number">1</span>
+      <p>Pendidikan terpadu antara ilmu agama dan umum.</p>
+    </div>
+    <div class="mengapa-item">
+      <span class="number">2</span>
+      <p>Pembentukan karakter siswa berakhlakul karimah, disiplin, dan bertanggung jawab.</p>
+    </div>
+    <div class="mengapa-item">
+      <span class="number">3</span>
+      <p>Program kewirausahaan yang menumbuhkan kreativitas dan jiwa mandiri siswa.</p>
+    </div>
+    <div class="mengapa-item">
+      <span class="number">4</span>
+      <p>Program tahfidz Al-Qur’an yang berkelanjutan dan mendalam.</p>
+    </div>
+    <div class="mengapa-item">
+      <span class="number">5</span>
+      <p>Pembelajaran aktif, kreatif, dan berbasis teknologi untuk mengembangkan potensi siswa.</p>
+    </div>
+    <div class="mengapa-item">
+      <span class="number">6</span>
+      <p>Lingkungan belajar islami, aman, bersih, dan nyaman untuk semua siswa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI AKTIVITAS -->
+<section id="galeri">
+  <div class="judul">
+    <h2>Galeri Aktivitas</h2>
+  </div>
+
+  <div class="galeri-grid">
+    <div class="galeri-item"><img src="images/hero1.jpg" alt="Aktivitas 1"></div>
+    <div class="galeri-item"><img src="images/hero2.jpg" alt="Aktivitas 2"></div>
+    <div class="galeri-item"><img src="images/hero3.jpeg" alt="Aktivitas 3"></div>
+	<div class="galeri-item"><img src="images/hero4.jpeg" alt="Aktivitas 3"></div>
+  </div>
+</section>
+
+<!-- === EKSTRAKURIKULER SECTION === -->
+<section id="ekstra">
+  <div class="judul">
+    <h2>Ekstrakurikuler</h2>
+  </div>
+
+  <div class="ekstra-grid">
+    <div class="ekstra-card">
+      <img src="images/ekstra1.png" alt="Pramuka">
+      <h4>Pramuka</h4>
+      <p>Mengajarkan kedisiplinan, kepemimpinan, dan kerja sama tim.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra2.png" alt="Pencak Silat">
+      <h4>Pencak Silat</h4>
+      <p>Belajar bela diri tradisional untuk kesehatan, disiplin, dan karakter.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra3.png" alt="Olahraga">
+      <h4>Olahraga</h4>
+      <p>Berbagai cabang olahraga untuk kesehatan dan prestasi siswa.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra4.png" alt="Kesenian">
+      <h4>Kesenian</h4>
+      <p>Mengembangkan kreativitas melalui seni musik, tari, dan teater.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra5.png" alt="Robotik & IT">
+      <h4>Robotik & IT</h4>
+      <p>Mempelajari teknologi, coding, dan kompetisi robotik.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra6.png" alt="Desain Grafis">
+      <h4>Desain Grafis</h4>
+      <p>Belajar desain digital, ilustrasi, dan kreativitas visual.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra7.png" alt="Hadroh">
+      <h4>Hadroh</h4>
+      <p>Mengasah kemampuan musik Islami dan menghidupkan budaya tradisi.</p>
+    </div>
+
+    <div class="ekstra-card">
+      <img src="images/ekstra8.png" alt="Renang">
+      <h4>Renang</h4>
+      <p>Melatih kebugaran, keberanian, dan keterampilan hidup siswa.</p>
+    </div>
+	
+	<div class="ekstra-card">
+      <img src="images/ekstra8.png" alt="Pecinta Alam">
+      <h4>Pecinta Alam</h4>
+      <p>Membina kecintaan terhadap lingkungan, keterampilan survival, dan kepedulian sosial melalui kegiatan hiking, camping, dan eksplorasi alam.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- INFORMASI PENTING & KONTAK -->
+<section id="info-kontak">
+  <div class="judul">
+    <h2>Informasi Penting & Kontak</h2>
+  </div>
+
+  <div class="info-grid">
+    <!-- PPDB / Jadwal Penting -->
+    <div class="info-card">
+      <h4>SPMB (Sistem Penerimaan Murid Baru)</h4>
+      <p>Segera daftarkan putra-putri Anda ke MTs Prof. YPI Syahda!</p>
+      <ul>
+        <li><strong>1 Juli - 31 Juli 2025:</strong> Pendaftaran online</li>
+        <li><strong>1 Agustus - 7 Agustus 2025:</strong> Tes seleksi</li>
+        <li><strong>10 Agustus 2025:</strong> Pengumuman hasil seleksi</li>
+        <li><strong>12 Agustus - 20 Agustus 2025:</strong> Daftar ulang dan administrasi</li>
+      </ul>
+      <a href="#" class="btn-cta">Info Lengkap SPMB</a>
+    </div>
+
+    <!-- Kontak & Lokasi -->
+    <div class="info-card">
+      <h4>Kontak & Lokasi</h4>
+      <p><span class="icon">📍</span> MTs Prof. YPI Syahda, Jl. Contoh No. 123, Kota, Provinsi</p>
+
+      <p><span class="icon">📞</span> <strong>Bapak Ahmad:</strong> 0812-3456-7890</p>
+      <p><span class="icon">📞</span> <strong>Ibu Siti:</strong> 0813-9876-5432</p>
+      <p><span class="icon">📞</span> <strong>Bapak Yusuf:</strong> 0812-1122-3344</p>
+
+      <p><span class="icon">✉️</span> info@syahda.sch.id</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-social">
+    <a href="#" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" height="24">
+    </a>
+    <a href="#" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="mailto:info@mtsypisyahda.sch.id">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" width="24" height="24">
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 MTs Prof YPI Syahda — All Rights Reserved
+  </div>
+</footer>
+
+
+
+  <!-- SCRIPT SLIDER -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const slidesContainer = document.querySelector('.slides');
+
+    function showSlide(index) {
+      currentSlide = (index + totalSlides) % totalSlides;
+      slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    // Auto-slide setiap 5 detik
+    setInterval(() => {
+      showSlide(currentSlide + 1);
+    }, 5000);
+
+  // === HAMBURGER MENU ===
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+  </script>
 
 </body>
 </html>
