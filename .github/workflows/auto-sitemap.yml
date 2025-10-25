@@ -1,0 +1,81 @@
+name: Auto Generate Sitemap & Robots.txt
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate sitemap.xml and robots.txt
+        run: |
+          DOMAIN="https://mtsprofypisyahda.sch.id"
+          echo "🔍 Generating sitemap.xml for $DOMAIN"
+
+          # --- Sitemap Header ---
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+
+          echo "  <url><loc>${DOMAIN}/</loc><priority>1.00</priority></url>" >> sitemap.xml
+          
+          declare -A pages=(
+            ["${DOMAIN}/ppdb"]=0.95
+            ["${DOMAIN}/ekstrakurikuler"]=0.90
+            ["${DOMAIN}/fasilitas"]=0.90
+            ["${DOMAIN}/staff"]=0.85
+            ["${DOMAIN}/galeri"]=0.80
+            ["${DOMAIN}/kontak"]=0.75
+            ["${DOMAIN}/tentang"]=0.70
+          )
+
+          for url in "${!pages[@]}"; do
+            echo "  <url><loc>${url}</loc><priority>${pages[$url]}</priority></url>" >> sitemap.xml
+          done
+
+          for file in $(find . -name "*.html" ! -path "./404.html" ! -path "./node_modules/*" ! -path "./admin/*"); do
+            rel="${file#./}"
+            url="${DOMAIN}/${rel%index.html}"
+            [[ "$url" == */ ]] || url="${url%/}"
+            echo "  <url><loc>$url</loc><priority>0.70</priority></url>" >> sitemap.xml
+          done
+
+          # --- Footer sitemap ---
+          echo '</urlset>' >> sitemap.xml
+
+          echo "✅ sitemap.xml created"
+
+          # --- Robots.txt ---
+          echo "🦾 Generating robots.txt"
+          {
+            echo "User-agent: *"
+            echo "Allow: /"
+            echo ""
+            echo "# Block halaman sensitif"
+            echo "Disallow: /404.html"
+            echo "Disallow: /admin/"
+            echo "Disallow: /assets/private/"
+            echo ""
+            echo "# Sitemap"
+            echo "Sitemap: ${DOMAIN}/sitemap.xml"
+            echo ""
+            echo "# Tambahan crawl setting"
+            echo "Crawl-delay: 5"
+            echo "Host: mtsprofypisyahda.sch.id"
+          } > robots.txt
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sitemap.xml robots.txt
+          git commit -m "Auto update sitemap & robots.txt [skip ci]" || echo "No changes to commit"
+          git push
