@@ -1,56 +1,14 @@
-# =========================================
-# robots.txt untuk MTs Prof YPI Syahda
-# Optimized for SEO + Security
-# =========================================
-
 User-agent: *
 Allow: /
 
+# Block halaman sensitif
 Disallow: /404.html
 Disallow: /admin/
 Disallow: /assets/private/
-Disallow: /tmp/
-Disallow: /backup/
-Disallow: /draft/
-Disallow: /old/
-Disallow: /test/
-Disallow: /*.txt$
-Disallow: /*.md$
-Disallow: /*.json$
-Disallow: /*.zip$
-Disallow: /*.rar$
-Disallow: /*.csv$
-Disallow: /*.xml$
 
-Allow: /sitemap.xml
-
-Allow: /index.html
-Allow: /about.html
-Allow: /daftar.html
-Allow: /informasi.html
-Allow: /artikel.html
-Allow: /profil/
-Allow: /ppdb/
-Allow: /galeri/
-Allow: /ekstrakurikuler/
-Allow: /kontak/
-Allow: /berita/
-Allow: /kegiatan/
-Allow: /guru/
-Allow: /fasilitas/
-
-Host: https://mtsprofypisyahda.sch.id
-
+# Sitemap
 Sitemap: https://mtsprofypisyahda.sch.id/sitemap.xml
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Disallow: /
+# Tambahan crawl setting
+Crawl-delay: 5
+Host: mtsprofypisyahda.sch.id

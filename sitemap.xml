@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mtsprofypisyahda.sch.id/index.html</loc>
-    <lastmod>2025-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://mtsprofypisyahda.sch.id/</loc><priority>1.00</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/tentang</loc><priority>0.70</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/staff</loc><priority>0.85</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/ppdb</loc><priority>0.95</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/galeri</loc><priority>0.80</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/ekstrakurikuler</loc><priority>0.90</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/kontak</loc><priority>0.75</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/fasilitas</loc><priority>0.90</priority></url>
+  <url><loc>https://mtsprofypisyahda.sch.id/</loc><priority>0.70</priority></url>
 </urlset>
