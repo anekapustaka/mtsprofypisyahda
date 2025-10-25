@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Jangan indeks halaman error dan file internal
+Disallow: /404.html
+Disallow: /admin/
+Disallow: /assets/private/
+
+# Sitemap untuk membantu Google merayapi
+Sitemap: https://mtsprofypisyahda.sch.id/sitemap.xml
