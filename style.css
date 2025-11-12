@@ -336,6 +336,7 @@ nav a::after {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
   margin-top: 25px;
+  justify-content: center; /* ✅ membuat baris terakhir rata tengah */
 }
 
 .misi-item {
@@ -343,20 +344,44 @@ nav a::after {
   padding: 18px 20px;
   border-radius: 12px;
   border: 1.5px solid #cfe8cf;
+  text-align: justify;
   transition: all 0.3s ease;
+  max-width: 360px; /* ✅ batasi lebar supaya item tidak melebar di tengah */
+  margin: 0 auto;   /* ✅ jaga agar elemen tersisa (misal 1 item) selalu center */
 }
 
 .misi-item:hover {
   background: #f6fff6;
   border-color: #0b6b30;
-  transform: translateY(-4px);
+  transform: translateY(-1px);
 }
 
-.misi-item::before {
-  content: "🌿";
-  font-size: 1.1rem;
-  color: #0b6b30;
-  margin-right: 8px;
+/* --- dua item terakhir: rata tengah --- */
+.misi-terakhir {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center; /* ✅ pusatkan dua item terakhir */
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .misi-utama {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .misi-terakhir {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .misi-utama {
+    grid-template-columns: 1fr;
+  }
+
+  .misi-terakhir {
+    grid-template-columns: 1fr;
+  }
 }
 /* ================================
    SAMBUTAN KEPALA MADRASAH
@@ -369,30 +394,51 @@ nav a::after {
 #sambutan .sambutan-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
-  align-items: center;
+  align-items: stretch; /* buat tinggi foto menyesuaikan teks */
 }
 
+/* FOTO */
 #sambutan .sambutan-foto {
-  flex: 0 0 250px;
+  flex: 0 0 400px;
+  max-width: 40%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-top: 50px; /* ✅ tambahkan jarak agar bingkai turun */
+  margin-bottom: 50px; /* ✅ tambahkan jarak agar bingkai turun */
 }
+
 
 #sambutan .sambutan-foto img {
   width: 100%;
-  border-radius: 12px;
+  height: 100%;
+  min-height: 100px; /* buat lebih tinggi */
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  object-position: 60% center;
+  transition: transform 0.4s ease;
 }
 
+#sambutan .sambutan-foto img:hover {
+  transform: scale(1.05);
+}
+
+/* TEKS */
 #sambutan .sambutan-teks {
   flex: 1;
-  min-width: 300px;
-  max-width: 700px;
+  min-width: 350px;
+  max-width: 750px;
   color: #0b6b30;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.15rem;
+  line-height: 1.9;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #sambutan .sambutan-teks .penutup {
@@ -406,6 +452,12 @@ nav a::after {
 }
 
 /* RESPONSIVE */
+@media (max-width: 992px) {
+  #sambutan .sambutan-foto {
+    flex: 0 0 280px;
+  }
+}
+
 @media (max-width: 768px) {
   #sambutan .sambutan-container {
     flex-direction: column;
@@ -414,13 +466,21 @@ nav a::after {
   }
 
   #sambutan .sambutan-foto {
-    flex: 0 0 200px;
+    flex: 0 0 auto;
+    max-width: 80%;
+    height: 250px; /* atur tinggi lebih kecil di HP */
+  }
+
+  #sambutan .sambutan-foto img {
+    min-height: 100%;
   }
 
   #sambutan .sambutan-teks {
     max-width: 100%;
+    margin-top: 20px;
   }
 }
+
 
 /* ===============================
 	SECTION MENGAPA
@@ -682,7 +742,7 @@ nav a::after {
 
 .fasilitas-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* ✅ 5 kolom di desktop */
   gap: 20px;
   margin-top: 40px;
 }
@@ -693,6 +753,9 @@ nav a::after {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .fasilitas-item:hover {
@@ -713,12 +776,56 @@ nav a::after {
   font-weight: 500;
   color: #0b6b30;
   background: #ffffff;
+  word-wrap: break-word;      /* ✅ pecah kata panjang */
+  overflow-wrap: break-word;  /* ✅ agar teks tidak keluar */
+  text-align: center;
+  line-height: 1.4;
+  min-height: 50px; /* ✅ tinggi minimum agar kotak sejajar */
 }
 
-/* responsive: 3 grid di HP */
+.lihat-selengkapnya {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.btn-selengkapnya {
+  display: inline-block;
+  background-color: transparent;
+  color: #0b6b30;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #0b6b30;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #0b6b30;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+
+.btn-selengkapnya:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(11, 107, 48, 0.2);
+}
+
+/* ✅ Responsive: tablet & HP */
+@media (max-width: 1024px) {
+  .fasilitas-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom di tablet besar */
+  }
+}
+
 @media (max-width: 768px) {
   .fasilitas-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* ✅ 3 grid di HP */
     gap: 15px;
   }
   .fasilitas-item img {
@@ -726,8 +833,16 @@ nav a::after {
   }
   .fasilitas-item p {
     font-size: 0.85rem;
+    padding: 8px;
   }
 }
+
+@media (max-width: 480px) {
+  .fasilitas-container {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 kolom di HP kecil */
+  }
+}
+
 /* ===============================
    STAFF PENGAJAR
 ================================*/
