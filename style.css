@@ -157,6 +157,7 @@ nav a::after {
     background: #ffffff;
   }
 
+  /* Logo & teks lebih kecil di HP */
   .logo img {
     width: 42px;
     height: 42px;
@@ -335,7 +336,7 @@ nav a::after {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
   margin-top: 25px;
-  justify-content: center;
+  justify-content: center; /* ✅ membuat baris terakhir rata tengah */
 }
 
 .misi-item {
@@ -345,8 +346,8 @@ nav a::after {
   border: 1.5px solid #cfe8cf;
   text-align: justify;
   transition: all 0.3s ease;
-  max-width: 360px;
-  margin: 0 auto;
+  max-width: 360px; /* ✅ batasi lebar supaya item tidak melebar di tengah */
+  margin: 0 auto;   /* ✅ jaga agar elemen tersisa (misal 1 item) selalu center */
 }
 
 .misi-item:hover {
@@ -355,10 +356,10 @@ nav a::after {
   transform: translateY(-1px);
 }
 
-
+/* --- dua item terakhir: rata tengah --- */
 .misi-terakhir {
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  justify-content: center; /* ✅ pusatkan dua item terakhir */
   margin-top: 20px;
 }
 
@@ -386,7 +387,7 @@ nav a::after {
    SAMBUTAN KEPALA MADRASAH
 ================================ */
 #sambutan {
-  padding: 80px 5%;
+  padding: 10px 8%;
   background: #f0fff0;
 }
 
@@ -395,7 +396,7 @@ nav a::after {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  align-items: stretch;
+  align-items: stretch; /* buat tinggi foto menyesuaikan teks */
 }
 
 /* FOTO */
@@ -408,15 +409,15 @@ nav a::after {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 50px; /* ✅ tambahkan jarak agar bingkai turun */
+  margin-bottom: 50px; /* ✅ tambahkan jarak agar bingkai turun */
 }
 
 
 #sambutan .sambutan-foto img {
   width: 100%;
   height: 100%;
-  min-height: 100px;
+  min-height: 100px; /* buat lebih tinggi */
   object-fit: cover;
   object-position: 60% center;
   transition: transform 0.4s ease;
@@ -430,7 +431,8 @@ nav a::after {
 #sambutan .sambutan-teks {
   flex: 1;
   min-width: 350px;
-  max-width: 750px;
+  max-width: 90%; /* ✅ perkecil area teks biar ada jarak kanan kiri */
+  margin: 20px auto 0; /* ✅ auto agar teks tetap center */
   color: #0b6b30;
   font-size: 1rem;
   line-height: 1.9;
@@ -458,56 +460,41 @@ nav a::after {
 }
 
 @media (max-width: 768px) {
-  #sambutan {
-    padding: 60px 7%;
-  }
-
   #sambutan .sambutan-container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
+    align-items: center;   /* foto dan teks rata tengah */
+    justify-content: center;
+    text-align: center;    /* agar heading, salam, dll di tengah */
+	padding: 0 15px; /* ✅ beri jarak kanan dan kiri */
   }
 
   #sambutan .sambutan-foto {
     flex: 0 0 auto;
-    max-width: 85%;
-    height: auto;
+    max-width: 80%;
+    height: 250px; /* tinggi di HP */
     display: flex;
     justify-content: center;
   }
 
   #sambutan .sambutan-foto img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
+    min-height: 100%;
+    object-position: center;
   }
 
   #sambutan .sambutan-teks {
-    max-width: 95%;
-    margin-top: 10px;
-    padding: 0 10px;
-    text-align: justify;
-    font-size: 0.95rem;
-    line-height: 1.8;
-  }
-}
-
-@media (max-width: 480px) {
-  #sambutan {
-    padding: 50px 8%;
-  }
-
-  #sambutan .sambutan-foto {
     max-width: 90%;
+    margin-top: 20px;
+    text-align: justify; /* tetap justify untuk paragraf */
   }
 
-  #sambutan .sambutan-teks {
-    font-size: 0.9rem;
-    padding: 0 8px;
+  /* agar salam pembuka dan penutup tetap di tengah */
+  #sambutan .sambutan-teks .penutup,
+  #sambutan .sambutan-teks .nama-kepala {
+    text-align: justify;
   }
 }
+
+
 
 /* ===============================
 	SECTION MENGAPA
