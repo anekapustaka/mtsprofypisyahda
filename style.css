@@ -265,28 +265,74 @@ nav a::after {
   background: #0b7039;
 }
 
-/* Hero Responsive */
+/* ===============================
+   HERO SECTION (RESPONSIVE HP)
+================================*/
 @media (max-width: 768px) {
   .hero {
-    height: 100vh; /* ✅ isi penuh tinggi layar */
-  }
-
-  .hero-inner {
-    aspect-ratio: auto;
-    height: 100vh; /* ✅ penuh juga, tidak hanya 70% */
-    border-radius: 0;
+    width: 100vw;              /* ✅ penuh hingga tepi kanan layar */
+    height: 100vh;             /* ✅ isi penuh tinggi layar */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* biar konten di tengah */
+  }
+
+  .hero-inner {
+    width: 100vw;              /* ✅ pastikan penuh kanan kiri */
+    height: 100vh;             /* ✅ penuh tinggi layar */
+    aspect-ratio: auto;
+    border-radius: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slide {
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;               /* ✅ beri ruang kanan-kiri agar tidak mentok */
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    z-index: 2;
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     line-height: 1.3;
-    padding: 0 10px; /* beri ruang kanan-kiri biar tidak mepet */
+    margin-bottom: 18px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content button {
+    background: #0f9b4d;
+    color: white;
+    padding: 11px 28px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .hero-content button:hover {
+    background: #0b7039;
   }
 }
+
 
 /* ===============================
    VISI & MISI SECTION
