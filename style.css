@@ -168,10 +168,10 @@ nav a::after {
 
 .menu-toggle span {
   display: block;
-  height: 3.5px;           /* sedikit lebih tebal */
-  width: 22px;             /* lebih pendek agar proporsional */
+  height: 3.5px;
+  width: 22px;
   margin: 0 auto;
-  background: #ffffff;     /* putih */
+  background: #ffffff;
   border-radius: 3px;
   transition: all 0.35s ease-in-out;
   transform-origin: center;
@@ -192,11 +192,11 @@ nav a::after {
 
 .nav-overlay {
   position: fixed;
-  top: 70px; /* mulai di bawah header */
+  top: 70px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.4); /* lapisan putih transparan */
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(8px);
   opacity: 0;
   visibility: hidden;
@@ -204,7 +204,6 @@ nav a::after {
   z-index: 1000;
 }
 
-/* Saat menu aktif */
 nav.active ~ .nav-overlay {
   opacity: 1;
   visibility: visible;
@@ -479,7 +478,6 @@ nav.active ~ .nav-overlay {
   margin-top: 20px;
 }
 
-/* ===== RESPONSIVE UNTUK TABLET & HP ===== */
 @media (max-width: 768px) {
   .judul h2 {
     font-size: 17px;
@@ -490,7 +488,7 @@ nav.active ~ .nav-overlay {
   #misi {
     padding: 60px 5%;
     background: #f8fff8;
-    overflow-x: hidden; /* ✅ cegah layar geser ke kanan */
+    overflow-x: hidden;
   }
 
   .visi-card,
@@ -550,7 +548,6 @@ nav.active ~ .nav-overlay {
   }
 }
 
-/* ===== RESPONSIVE UNTUK HP KECIL ===== */
 @media (max-width: 480px) {
   .visi-card,
   .misi-card {
@@ -596,7 +593,6 @@ nav.active ~ .nav-overlay {
   text-align: center;
 }
 
-/* ====== JUDUL ====== */
 #sambutan .judul h2 {
   font-size: 1.8rem;
   color: #0b7039;
@@ -614,7 +610,6 @@ nav.active ~ .nav-overlay {
   border-radius: 2px;
 }
 
-/* ====== KONTENER ====== */
 #sambutan .sambutan-container {
   background: #ffffff;
   border-radius: 16px;
@@ -629,11 +624,10 @@ nav.active ~ .nav-overlay {
   box-sizing: border-box;
 }
 
-/* ====== FOTO ====== */
 #sambutan .sambutan-foto {
-  flex: 0 0 360px;            /* Lebar dasar sedikit lebih besar */
-  max-width: 360px;           /* Biar tampak lebih menonjol */
-  height: 440px;              /* Tambah tinggi agar tampak proporsional potret */
+  flex: 0 0 360px;
+  max-width: 360px;
+  height: 440px;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
@@ -645,8 +639,8 @@ nav.active ~ .nav-overlay {
 #sambutan .sambutan-foto img {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* ✅ biar tidak gepeng */
-  object-position: center top;/* fokus di wajah bagian atas */
+  object-fit: cover;
+  object-position: center top;
   border-radius: 14px;
   transition: transform 0.4s ease;
 }
@@ -656,7 +650,6 @@ nav.active ~ .nav-overlay {
   transform: scale(1.05);
 }
 
-/* ====== TEKS ====== */
 #sambutan .sambutan-teks {
   flex: 1;
   color: #0b6b30;
@@ -685,7 +678,6 @@ nav.active ~ .nav-overlay {
   line-height: 1.6;
 }
 
-/* ====== RESPONSIVE HP & TABLET ====== */
 @media (max-width: 768px) {
   #sambutan {
     padding: 60px 4%;
@@ -749,7 +741,6 @@ nav.active ~ .nav-overlay {
   text-align: center;
 }
 
-/* Grid 3 kolom di desktop */
 .mengapa-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -776,7 +767,6 @@ nav.active ~ .nav-overlay {
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* Nomor hijau bulat */
 .mengapa-item .number {
   font-size: 1.4rem;
   font-weight: 700;
@@ -876,7 +866,7 @@ nav.active ~ .nav-overlay {
 
 .galeri-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 foto per baris */
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
   width: 100%;
   max-width: 1200px;
@@ -884,7 +874,7 @@ nav.active ~ .nav-overlay {
 
 .galeri-item {
   width: 100%;
-  aspect-ratio: 1 / 1; /* kotak square */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -902,7 +892,6 @@ nav.active ~ .nav-overlay {
   transform: scale(1.05);
 }
 
-/* RESPONSIVE UNTUK HP: tetap 5 per baris */
 @media (max-width: 768px) {
   .galeri-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1076,7 +1065,6 @@ nav.active ~ .nav-overlay {
   margin-bottom: 6px;
 }
 
-/* responsive */
 @media (max-width: 768px) {
   #siklus {
     padding: 60px 6%;
@@ -1096,6 +1084,7 @@ nav.active ~ .nav-overlay {
     font-size: 1.1rem;
   }
 }
+
 /* ===============================
    FASILITAS PENDIDIKAN
 ================================*/
@@ -1114,7 +1103,7 @@ nav.active ~ .nav-overlay {
 
 .fasilitas-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* ✅ 5 kolom di desktop */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   margin-top: 40px;
 }
@@ -1148,11 +1137,11 @@ nav.active ~ .nav-overlay {
   font-weight: 500;
   color: #0b6b30;
   background: #ffffff;
-  word-wrap: break-word;      /* ✅ pecah kata panjang */
-  overflow-wrap: break-word;  /* ✅ agar teks tidak keluar */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   text-align: center;
   line-height: 1.4;
-  min-height: 50px; /* ✅ tinggi minimum agar kotak sejajar */
+  min-height: 50px;
 }
 
 .lihat-selengkapnya {
@@ -1230,7 +1219,6 @@ nav.active ~ .nav-overlay {
 /* ===============================
    STAFF PENGAJAR
 ================================*/
-
 #staff {
   padding: 90px 8%;
   background: linear-gradient(
@@ -1265,7 +1253,6 @@ nav.active ~ .nav-overlay {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* ✨ efek zoom lembut pada gambar */
 .staff-item img {
   width: 100%;
   height: 160px;
@@ -1291,7 +1278,6 @@ nav.active ~ .nav-overlay {
   color: #333;
 }
 
-/* responsive: 3 grid di HP */
 @media (max-width: 768px) {
   #staff {
 	background: linear-gradient(
@@ -1324,7 +1310,6 @@ nav.active ~ .nav-overlay {
 /* ===============================
    INFORMASI PENTING & KONTAK
 ================================*/
-
 #info-kontak {
   padding: 60px 5%;
   background: linear-gradient(
@@ -1397,13 +1382,13 @@ nav.active ~ .nav-overlay {
 
 #info-kontak .info-card ul {
   list-style: disc;
-  padding-left: 1.2rem;  /* beri jarak antara bulatan dan teks */
+  padding-left: 1.2rem;
   margin-top: 10px;
   line-height: 1.6;
 }
 
 #info-kontak .info-card li {
-  margin-bottom: 6px;    /* jarak antar item */
+  margin-bottom: 6px;
 }
 
 .kontak-list {
@@ -1418,7 +1403,7 @@ nav.active ~ .nav-overlay {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 450px;           /* panjang seragam */
+  max-width: 450px;
   background: #f8fff8;
   border: 1.5px solid #cce8cc;
   border-radius: 10px;
@@ -1432,7 +1417,6 @@ nav.active ~ .nav-overlay {
   transform: translateY(-2px);
 }
 
-/* Lingkaran hijau dengan ikon putih */
 .wa-icon-circle {
   background: #0b6b30;
   border-radius: 50%;
@@ -1449,7 +1433,6 @@ nav.active ~ .nav-overlay {
   width: 20px;
   height: 20px;
   filter: invert(100%) brightness(100%);
-  /* ubah ikon jadi putih */
 }
 
 .kontak-text strong {
@@ -1465,7 +1448,6 @@ nav.active ~ .nav-overlay {
   margin: 0;
 }
 
-/* RESPONSIVE HP: 1 kolom */
 @media (max-width: 768px) {
   #info-kontak {
 	  background: linear-gradient(
@@ -1520,10 +1502,10 @@ footer {
 .footer-bottom {
   font-size: 0.85rem;
 }
-/* ✅ FOOTER RESPONSIVE (KHUSUS HP) */
+
 @media (max-width: 768px) {
   footer {
-    width: 100vw; /* pastikan full selebar layar */
+    width: 100vw;
     margin: 0;
     padding: 25px 4%;
     background: #0b6b30;
@@ -1549,12 +1531,11 @@ footer {
   .footer-bottom {
     font-size: 0.8rem;
     line-height: 1.4;
-    padding: 0 10px; /* beri sedikit jarak biar teks tidak mentok */
-  }
+    padding: 0 10px;
 }
-
+}
 /* ===============================
-   ANIMASI FADE IN SAAT SCROLL
+   ANIMASI FADE IN SCROLL
 ================================*/
 
 .fade-in {
@@ -1567,5 +1548,53 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* ===============================
+	POP UP
+================================*/
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+#popup-box {
+  background: #ffffff;
+  padding: 25px;
+  width: 85%;
+  max-width: 350px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  font-family: "Poppins", sans-serif;
+}
 
+#popup-close {
+  margin-top: 15px;
+  background: #0b6b30;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#popup-close:hover {
+  background: #0a5c29;
+}
+
+#popup-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
