@@ -1,0 +1,133 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.artikel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.artikel-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.artikel-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.artikel-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.artikel-card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.artikel-card-title {
+    font-size: 18px;
+    color: #0b6b30;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.artikel-card-excerpt {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+    flex-grow: 1; /* dorong tombol ke bawah */
+}
+
+.btn-baca {
+    display: inline-block;
+    background: #0b6b30;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    text-align: center;
+    align-self: center; /* tombol ke tengah */
+    margin-top: 10px;
+}
+
+.btn-baca:hover {
+    background: #064d23;
+}
+
+h1 {
+    text-align: center;
+    color: #0b6b30;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   MOBILE ARTIKEL GRID
+================================ */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  .artikel-grid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .artikel-card {
+    border-radius: 10px;
+  }
+
+  .artikel-card img {
+    height: 190px; /* banner lebih besar di mobile */
+  }
+
+  .artikel-card-body {
+    padding: 14px;
+  }
+
+  .artikel-card-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+
+  .artikel-card-excerpt {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .btn-baca {
+    width: 100%; /* tombol full */
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+}
