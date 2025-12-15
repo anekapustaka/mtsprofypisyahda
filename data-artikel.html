@@ -118,6 +118,32 @@
 		grid.appendChild(card);
 	  });
 	});
+	
+	  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+  
+  const fadeEls = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  fadeEls.forEach(el => observer.observe(el));
+
+  window.addEventListener("load", function () {
+    const overlay = document.getElementById("popup-overlay");
+    overlay.classList.add("active");
+    console.log("Popup Activated");
+  });
 	</script>
 
 
