@@ -288,12 +288,19 @@
 @media (max-width: 768px) {
 
   .artikel-layout {
+    grid-template-columns: 1fr; /* ⬅️ jadi satu kolom */
     padding: 12px;
     gap: 20px;
   }
 
   .artikel-detail {
+    order: 1; /* artikel di atas */
     padding: 18px;
+  }
+
+  .artikel-sidebar {
+    order: 2; /* sidebar di bawah */
+    gap: 16px;
   }
 
   .artikel-banner {
@@ -321,10 +328,6 @@
     margin-top: 24px;
   }
 
-  .artikel-sidebar {
-    gap: 16px;
-  }
-
   .sidebar-box {
     padding: 15px;
   }
@@ -333,40 +336,16 @@
     font-size: 16px;
   }
 
-  .artikel-lainnya-item a {
-    gap: 12px;
-  }
-
-  .artikel-lainnya-item img {
-    width: 80px;
-    height: 60px;
-  }
-
-  .artikel-lainnya-item h5 {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .info-box p,
-  .info-box a {
-    font-size: 13px;
-  }
-  
   .artikel-image img {
     max-width: 100%;
     border-radius: 10px;
   }
 
-  .artikel-image figcaption {
-    font-size: 12px;
-  }
-  
   .artikel-media-left img,
   .artikel-media-right img {
     float: none;
     display: block;
     width: 100%;
-    max-width: 100%;
     margin: 0 0 12px 0;
   }
 
