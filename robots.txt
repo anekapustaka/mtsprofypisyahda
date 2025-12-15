@@ -1,14 +1,45 @@
+# Robots.txt - MTs Prof YPI Syahda
+#  __  __ _______    _____  _____   ____  ______  __     _______ _____    _______     __      _    _ _____          
+# |  \/  |__   __|  |  __ \|  __ \ / __ \|  ____| \ \   / /  __ \_   _|  / ____\ \   / //\   | |  | |  __ \   /\    
+# | \  / |  | |___  | |__) | |__) | |  | | |__     \ \_/ /| |__) || |   | (___  \ \_/ //  \  | |__| | |  | | /  \   
+# | |\/| |  | / __| |  ___/|  _  /| |  | |  __|     \   / |  ___/ | |    \___ \  \   // /\ \ |  __  | |  | |/ /\ \  
+# | |  | |  | \__ \ | |    | | \ \| |__| | |         | |  | |    _| |_   ____) |  | |/ ____ \| |  | | |__| / ____ \ 
+# |_|  |_|  |_|___/ |_|    |_|  \_\\____/|_|         |_|  |_|   |_____| |_____/   |_/_/    \_\_|  |_|_____/_/    \_\
+#                                                                                                                   
+# 2025 - MTs Prof YPI Syahda. All Right Reserved.                                                                                                                   
+
 User-agent: *
 Allow: /
 
-# Block halaman sensitif
 Disallow: /404.html
 Disallow: /admin/
 Disallow: /assets/private/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /config/
+Disallow: /scripts/
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /logs/
+Disallow: /data/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /tests/
+Disallow: /docs/
+Disallow: /.github/
+Disallow: /.git/
+Disallow: /.env
+Disallow: *.env
+Disallow: *.log
+Disallow: *.sql
+Disallow: *.bak
+Disallow: /README.md
+Disallow: /index.css
 
-# Sitemap
+Disallow: /staging/
+Disallow: /beta/
+Disallow: /private-page.html
+Disallow: /admin-panel.html
+
 Sitemap: https://mtsprofypisyahda.sch.id/sitemap.xml
-
-# Tambahan crawl setting
-Crawl-delay: 5
-Host: mtsprofypisyahda.sch.id
