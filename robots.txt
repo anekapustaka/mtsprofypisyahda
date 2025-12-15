@@ -11,31 +11,16 @@
 User-agent: *
 Allow: /
 
-Disallow: /404.html
 Disallow: /admin/
-Disallow: /assets/private/
 Disallow: /private/
 Disallow: /drafts/
-Disallow: /config/
-Disallow: /scripts/
-Disallow: /admin/
-Disallow: /backup/
-Disallow: /temp/
-Disallow: /logs/
-Disallow: /data/
-Disallow: /node_modules/
-Disallow: /vendor/
-Disallow: /tests/
-Disallow: /docs/
-Disallow: /.github/
 Disallow: /.git/
+Disallow: /.github/
 Disallow: /.env
 Disallow: *.env
 Disallow: *.log
 Disallow: *.sql
 Disallow: *.bak
-Disallow: /README.md
-Disallow: /index.css
 
 Disallow: /staging/
 Disallow: /beta/
