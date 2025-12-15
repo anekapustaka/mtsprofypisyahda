@@ -70,14 +70,14 @@ header {
 }
 
 .logo-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
 }
 
 .logo-subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #eaffea;
 }
@@ -116,7 +116,6 @@ nav a::after {
   .nav-overlay {
     display: none !important;
   }
-  
 }
 /* ===============================
    MOBILE NAVIGATION
@@ -211,13 +210,12 @@ nav.active ~ .nav-overlay {
 }
 
 
-  .logo img {
+.logo img {
     width: 52px;
     height: 52px;
   }
-
-}
-  .logo-text {
+  
+.logo-text {
   display: flex;
   flex-direction: column;
   line-height: 1;
@@ -235,14 +233,6 @@ nav.active ~ .nav-overlay {
   font-weight: 400;
   color: #eaffea;
 }
-  .logo-text span:nth-child(1),
-  .logo-text span:nth-child(3) {
-    font-size: 0.5rem;
-  }
-
-  .logo-text span:nth-child(2) {
-    font-size: 1rem;
-  }
 }
 
 /* ===============================
