@@ -7,8 +7,8 @@
 	<title>MTs Prof. YPI Syahda — Dk. Randu, Ds. Temon, Kec. Simo, Kab. Boyolali</title>
 
 	<title>MTs Prof. YPI Syahda — Madrasah Unggulan & Berbasis Akhlakul Karimah</title>
-	<meta name="description" content="MTs Prof. YPI Syahda adalah Madrasah Tsanawiyah unggulan di Sragen yang fokus mencetak generasi berakhlak Qur’ani, berilmu, disiplin, dan berdaya saing. Informasi PPDB, profil madrasah, program unggulan, dan kegiatan siswa." />
-	<meta name="keywords" content="MTs, MTs Syahda, YPI Syahda, Madrasah Tsanawiyah, MTs Prof YPI Syahda, MTs terbaik di Boyolali, PPDB MTs, Sekolah Islam, Pendidikan Islam Sragen, Madrasah Unggulan" />
+	<meta name="description" content="MTs Prof. YPI Syahda adalah Madrasah Tsanawiyah di Boyolali yang fokus mencetak generasi berakhlak Qur’ani, berilmu, disiplin, dan berdaya saing. Informasi PPDB, profil madrasah, program unggulan, dan kegiatan siswa." />
+	<meta name="keywords" content="MTs, MTs Syahda, YPI Syahda, Madrasah Tsanawiyah, MTs Prof YPI Syahda, MTs terbaik di Boyolali, PPDB MTs, Sekolah Islam, Pendidikan Islam Boyolali, Madrasah Unggulan" />
 	<meta name="author" content="MTs Prof. YPI Syahda" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,7 @@
 	<meta name="msapplication-TileColor" content="#0b6b30">
 	<meta name="msapplication-TileImage" content="images/logo.png">
 
-	<meta property="og:title" content="MTs Prof. YPI Syahda — Madrasah Unggulan di Sragen" />
+	<meta property="og:title" content="MTs Prof. YPI Syahda — Madrasah Unggulan di Boyolali" />
 	<meta property="og:description" content="Madrasah unggulan yang berkomitmen mencetak generasi Qur’ani, disiplin, dan berprestasi. Temukan informasi PPDB, program unggulan, dan fasilitas madrasah." />
 	<meta property="og:image" content="https://mtsprofypisyahda.sch.id/images/logo.png" />
 	<meta property="og:url" content="https://mtsprofypisyahda.sch.id/" />
@@ -32,7 +32,7 @@
 	<meta property="og:locale" content="id_ID" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="MTs Prof. YPI Syahda — Madrasah Unggulan di Sragen" />
+	<meta name="twitter:title" content="MTs Prof. YPI Syahda — Madrasah Unggulan di Boyolali" />
 	<meta name="twitter:description" content="Madrasah unggulan mencetak generasi Qur’ani, berprestasi, dan berdaya saing." />
 	<meta name="twitter:image" content="https://mtsprofypisyahda.sch.id/images/logo.png" />
 
@@ -44,10 +44,10 @@
 	  "alternateName": "Madrasah Tsanawiyah YPI Syahda",
 	  "url": "https://mtsprofypisyahda.sch.id/",
 	  "logo": "https://mtsprofypisyahda.sch.id/images/logo.png",
-	  "description": "Madrasah Tsanawiyah unggulan berbasis akhlakul karimah dan pendidikan Qur’ani di Sragen.",
+	  "description": "Madrasah Tsanawiyah unggulan berbasis akhlakul karimah dan pendidikan Qur’ani di Boyolali.",
 	  "address": {
 		"@type": "PostalAddress",
-		"addressLocality": "Sragen",
+		"addressLocality": "Boyolali",
 		"addressRegion": "Jawa Tengah",
 		"addressCountry": "ID"
 	  },
@@ -238,12 +238,24 @@
     <div class="galeri-item"><img src="images/hero1.jpg" alt="Aktivitas 1"></div>
     <div class="galeri-item"><img src="images/hero2.jpg" alt="Aktivitas 2"></div>
     <div class="galeri-item"><img src="images/hero3.jpeg" alt="Aktivitas 3"></div>
-	<div class="galeri-item"><img src="images/hero4.jpeg" alt="Aktivitas 3"></div>
-  </div>
+	<div class="galeri-item"><img src="images/hero4.jpeg" alt="Aktivitas 4"></div>
+	<div class="galeri-item"><img src="images/matsama.jpg" alt="Aktivitas 5"></div>
+	<div class="galeri-item"><img src="images/artikel/hutri80.jpeg" alt="Aktivitas 6"></div>
+	<div class="galeri-item"><img src="images/artikel/qiroati.jpg" alt="Aktivitas 7"></div>
+	<div class="galeri-item"><img src="images/lombadaffa.jpg" alt="Aktivitas 8"></div>
+	<div class="galeri-item"><img src="images/hadiah17hut.jpeg" alt="Aktivitas 9"></div>
+	<div class="galeri-item"><img src="images/artikel/pengajian.jpg" alt="Aktivitas 10"></div>
+	</div>
     <div class="lihat-selengkapnya">
 		<a href="galeri.html" class="btn-selengkapnya">Lihat Selengkapnya</a>
 	</div>
 </section>
+
+<!-- Lightbox Preview -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+</div>
 
 <!-- === EKSTRAKURIKULER SECTION === -->
 <section id="ekstra" class="fade-in">
@@ -591,6 +603,29 @@
   document.getElementById("popup-close").addEventListener("click", function () {
     document.getElementById("popup-overlay").classList.remove("active");
   });
+
+  const images = document.querySelectorAll('.galeri-item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = 'none';
+    }
+  });
+
 </script>
 
 
