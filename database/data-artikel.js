@@ -2,7 +2,7 @@
 
 <figure class="artikel-image">
   <img src="images/sk-guru.jpg" alt="Penyerahan SK Guru MTs Prof YPI Syahda">
-  <figcaption>Penyerahan SK Guru dan Tendik</figcaption>
+  <figcaption>Pagelaran Tari Kolosal GEMATI Kemenag Boyolali</figcaption>
 </figure>
 
 <div class="artikel-media-left">
@@ -410,6 +410,171 @@ const articles = [
       lil ‘alamin.
     </p>
   `
-}
+},
+{
+  id: 5,
+  slug: "mts-prof-ypi-syahda-hab-kemenag-80-kawedanan-simo",
+  title: "MTs Prof YPI SYAHDA Hadiri Upacara HAB Kemenag ke-80 di Kawedanan Simo",
+  date: "3 Januari 2026",
+  author: "Redaksi MTs Prof YPI Syahda",
+  banner: "images/artikel/upacarahab80.png",
+  excerpt: "MTs Prof YPI SYAHDA turut berpartisipasi dalam Upacara Peringatan Hari Amal Bakti (HAB) Kementerian Agama Republik Indonesia ke-80 yang diselenggarakan di Kawedanan Simo.",
+  description: "Partisipasi MTs Prof YPI SYAHDA dalam Upacara HAB Kemenag ke-80 di Kawedanan Simo sebagai wujud dukungan terhadap nilai pengabdian, kerukunan, dan sinergi antar lembaga di lingkungan Kementerian Agama.",
+  keywords: "HAB Kemenag ke-80, MTs Prof YPI SYAHDA, Kawedanan Simo, Hari Amal Bakti, Kementerian Agama",
+  tags: [
+    "hab-kemenag",
+    "berita-syahda",
+    "kegiatan-madrasah",
+    "pendidikan-islam",
+    "kemenag"
+  ],
+  content: `
+	  <p>
+	  MTs Prof YPI SYAHDA turut berpartisipasi dalam Upacara Peringatan Hari Amal Bakti (HAB) Kementerian 
+	  Agama Republik Indonesia ke-80 yang diselenggarakan di Kawedanan Simo. Kegiatan ini menjadi momentum penting bagi 
+	  seluruh jajaran Kementerian Agama untuk melakukan refleksi terhadap nilai-nilai pengabdian, integritas, profesionalisme, 
+	  serta komitmen pelayanan kepada masyarakat dalam bingkai Negara Kesatuan Republik Indonesia.
+	  Upacara peringatan HAB ke-80 tersebut diikuti oleh berbagai unsur satuan kerja di lingkungan Kementerian Agama, 
+	  antara lain perwakilan madrasah, Kantor Urusan Agama (KUA), tokoh agama, tokoh masyarakat, aparatur pemerintahan, 
+	  serta instansi terkait lainnya. Kehadiran lintas unsur ini mencerminkan kuatnya sinergi dan kebersamaan dalam membangun 
+	  kehidupan keagamaan yang rukun, harmonis, dan berkelanjutan.
+	  </p>
+	  <br>
+	  <p>
+	  Pelaksanaan upacara berlangsung dengan khidmat, tertib, dan penuh rasa hormat. 
+	  Seluruh peserta mengikuti rangkaian kegiatan dengan disiplin dan kesungguhan, mencerminkan komitmen bersama dalam menjaga nilai persatuan, 
+	  kebangsaan, serta kerukunan antarumat beragama. Suasana kebersamaan yang terbangun menjadi gambaran nyata semangat Hari Amal Bakti sebagai 
+	  momentum pemersatu seluruh elemen Kementerian Agama.
+	  Sebagai bagian dari keluarga besar Kementerian Agama, MTs Prof YPI SYAHDA mengirimkan 
+	  perwakilan untuk mengikuti upacara tersebut. Keikutsertaan ini merupakan wujud nyata dukungan madrasah terhadap program, 
+	  kebijakan, dan visi Kementerian Agama dalam membangun sumber daya manusia yang religius, moderat, dan berkarakter. 
+	  Kegiatan ini sekaligus menjadi sarana edukatif bagi warga madrasah dalam menanamkan nilai kedisiplinan, tanggung jawab, 
+	  serta semangat pengabdian di bidang pendidikan.
+	  </p>
+	  <br>
+	  <p>
+	  <div class="artikel-media-left">
+	  <img src="images/artikel/simbolisgttptt.jpeg" 
+	  alt="Simbolis Penyerahan Bantuan GTT dan PTT">
+	  Selain itu, pada rangkaian peringatan Hari Amal Bakti Kementerian Agama ke-80 yang dilaksanakan di MAN 1 Boyolali, 
+	  turut hadir perwakilan dari MTs Prof YPI SYAHDA yang diwakili oleh <strong>Ibu Hj. Yunita Niqrisah Dwi Pratiwi, SE., M.Si. selaku Wakil Kepala Madrasah Bidang Sarana dan Prasarana</strong>. 
+	  Kehadiran tersebut menjadi bentuk partisipasi aktif madrasah dalam mendukung kegiatan resmi Kementerian Agama di tingkat kabupaten.
+	  </div>
+	  
+	  <p>
+	  Dalam kesempatan tersebut, perwakilan MTs Prof YPI SYAHDA juga menjadi simbolis penyerahan dan penerimaan bantuan bagi <strong>Guru Tidak Tetap (GTT) dan Pegawai 
+	  Tidak Tetap (PTT)</strong>. Program ini merupakan bentuk perhatian dan kepedulian Kementerian Agama terhadap kesejahteraan tenaga pendidik dan 
+	  kependidikan, dengan jumlah penerima manfaat sebanyak <strong>400 orang</strong> dari berbagai satuan pendidikan di lingkungan 
+	  Kementerian Agama Kabupaten Boyolali.
+	  </p>
+	  <br>
+	  <p>
+	  Peringatan Hari Amal Bakti ke-80 tahun ini mengusung tema “Umat Rukun dan Sinergi, Indonesia Damai dan Maju”. Tema tersebut mengandung pesan strategis tentang pentingnya menjaga keharmonisan antarumat beragama, memperkuat toleransi, serta meningkatkan sinergi lintas lembaga dalam menghadapi berbagai tantangan bangsa di era global. Kerukunan dan kolaborasi menjadi kunci utama dalam mewujudkan kehidupan masyarakat yang damai, adil, dan sejahtera.
+	  Bagi MTs Prof YPI SYAHDA, peringatan HAB bukan sekadar kegiatan seremonial, melainkan menjadi pengingat akan peran strategis madrasah dalam membentuk generasi penerus bangsa. Madrasah memiliki tanggung jawab besar untuk mencetak peserta didik yang tidak hanya unggul secara akademik, tetapi juga memiliki karakter religius, sikap toleran, akhlak mulia, serta kecintaan terhadap tanah air.
+	  Melalui momentum ini, MTs Prof YPI SYAHDA diharapkan terus berkontribusi aktif dalam menanamkan nilai-nilai moderasi beragama di lingkungan pendidikan. Madrasah diharapkan menjadi garda terdepan dalam membangun budaya saling menghormati, menghargai perbedaan, serta memperkuat persaudaraan di tengah keberagaman masyarakat.
+	  </p>
+	  <br>
+	  <p>
+	  <figure class="artikel-image">
+	  <img src="images/artikel/upacarahabdisimo.jpeg" alt="Perwakilan Upacara HAB di Kawedanan Simo">
+	  <figcaption>Perwakilan Guru Upacara HAB di Kawedanan Simo</figcaption>
+	  </figure>
+	  Kegiatan ini juga menjadi ajang mempererat silaturahmi dan memperkuat koordinasi antar lembaga pendidikan dan keagamaan di wilayah Kawedanan Simo dan Kabupaten Boyolali. Interaksi dan kebersamaan yang terjalin diharapkan mampu melahirkan kerja sama yang lebih solid dalam mendukung berbagai program keagamaan, sosial, dan pendidikan di masa mendatang.
+	  Sebagai penutup rangkaian kegiatan, seluruh peserta upacara memanjatkan doa agar Kementerian Agama Republik Indonesia senantiasa diberikan kekuatan, kelancaran, dan keberkahan dalam menjalankan amanah pelayanan kepada umat. Semoga seluruh pengabdian yang telah dan akan dilakukan menjadi amal ibadah, membawa kemaslahatan bagi umat, bangsa, dan negara, serta menjadikan Indonesia sebagai negeri yang damai, maju, dan diridhai Allah SWT. Aamiin.
+	  </p>
+	`
+	},
+	
+	{
+	  id: 6,
+	  slug: "mts-prof-ypi-syahda-pagelaran-tari-kolosal-gemati-kemenag-boyolali",
+	  title: "MTs Prof YPI SYAHDA Berpartisipasi dalam Pagelaran Tari Kolosal GEMATI Kemenag Boyolali",
+	  date: "6 Januari 2026",
+	  author: "Redaksi MTs Prof YPI Syahda",
+	  banner: "images/artikel/tarikolosal4.jpeg",
+	  excerpt: "MTs Prof YPI SYAHDA turut ambil bagian dalam Pagelaran Tari Kolosal GEMATI Kementerian Agama Kabupaten Boyolali yang berhasil mencatatkan Rekor MURI dengan 4.444 peserta.",
+	  description: "Partisipasi MTs Prof YPI SYAHDA dalam Pagelaran Tari Kolosal GEMATI Kemenag Boyolali sebagai wujud dukungan terhadap penguatan karakter, seni budaya, dan nilai kebersamaan dalam peringatan HAB Kemenag ke-80.",
+	  keywords: "Tari Kolosal GEMATI, HAB Kemenag ke-80, MTs Prof YPI SYAHDA, Kemenag Boyolali, Rekor MURI, Pendidikan Islam",
+	  tags: [
+		"tari-kolosal",
+		"gemati",
+		"hab-kemenag",
+		"berita-syahda",
+		"kegiatan-madrasah",
+		"pendidikan-islam"
+	  ],
+	  content: `
+		<p>
+		Dalam rangka memperingati Hari Amal Bakti (HAB) Kementerian Agama Republik Indonesia ke-80, 
+		MTs Prof YPI SYAHDA dengan penuh kebanggaan turut berpartisipasi dalam Pagelaran Tari Kolosal GEMATI 
+		yang diselenggarakan oleh Kementerian Agama Kabupaten Boyolali. Kegiatan monumental ini menjadi salah satu 
+		rangkaian utama peringatan HAB yang sarat dengan nilai religius, budaya, serta semangat kebersamaan.
+		Pagelaran Tari Kolosal GEMATI berhasil mencatatkan prestasi membanggakan dengan meraih 
+		<strong>Rekor Museum Rekor-Dunia Indonesia (MURI)</strong> sebagai pagelaran tari kolosal dengan jumlah 
+		peserta terbanyak, yaitu <strong>4.444 peserta</strong>. Ribuan peserta yang berasal dari berbagai satuan kerja 
+		Kementerian Agama, madrasah, sekolah, serta unsur masyarakat tampil secara serempak, 
+		menciptakan harmoni gerak yang memukau dan penuh makna.
+		</p>
+		<br>
+		<p>
+		Keterlibatan MTs Prof YPI SYAHDA dalam kegiatan ini merupakan wujud nyata kontribusi madrasah 
+		dalam mendukung program Kementerian Agama, khususnya dalam penguatan karakter peserta didik 
+		melalui pendekatan seni dan budaya. Seni tari dipandang sebagai media edukatif yang efektif 
+		untuk menanamkan nilai-nilai kebersamaan, kedisiplinan, kekompakan, serta rasa cinta terhadap budaya bangsa.
+		Tari Kolosal GEMATI tidak hanya menampilkan keindahan gerak dan kekayaan budaya, 
+		tetapi juga sarat dengan pesan moral dan spiritual. Setiap rangkaian gerakan menggambarkan 
+		semangat pengabdian, persatuan, dan kerukunan umat beragama yang menjadi ruh utama 
+		Kementerian Agama dalam melayani masyarakat Indonesia yang majemuk.
+		</p>
+		<br>
+		<p>
+		Melalui keterlibatan dalam pagelaran ini, peserta dari MTs Prof YPI SYAHDA mendapatkan pengalaman berharga 
+		tentang pentingnya kerja sama, tanggung jawab kolektif, serta komitmen dalam mencapai tujuan bersama. 
+		Proses latihan hingga pelaksanaan pertunjukan menjadi sarana pembelajaran nyata 
+		bagi peserta didik untuk menghargai peran masing-masing dan menjunjung tinggi semangat gotong royong.
+		</p>
+		<br>
+		<p>
+		<div class="artikel-media-left">
+		<img src="images/artikel/tarikolosal2.jpeg" 
+		alt="Pagelaran Tari Kolosal GEMATI Kemenag Boyolali">
+		Kegiatan ini juga mencerminkan sinergi yang kuat antara lembaga pendidikan, instansi pemerintah, 
+		dan masyarakat. Kolaborasi lintas sektor tersebut menjadi bukti bahwa seni dan budaya 
+		mampu menjadi jembatan pemersatu dalam keberagaman, sekaligus memperkuat identitas nasional 
+		dalam bingkai Negara Kesatuan Republik Indonesia. Bagi MTs Prof YPI SYAHDA, partisipasi dalam Pagelaran Tari Kolosal GEMATI menjadi momentum penting 
+		untuk menegaskan peran madrasah sebagai lembaga pendidikan yang tidak hanya berfokus pada capaian akademik, 
+		tetapi juga pada pembentukan karakter peserta didik yang religius, toleran, dan berjiwa kebangsaan. 
+		Madrasah diharapkan terus menjadi ruang tumbuh bagi generasi muda yang mampu menyeimbangkan 
+		ilmu pengetahuan, iman, dan budaya.</div>
+		</p>
+		<br>
+		<p>
+		Tema besar peringatan Hari Amal Bakti ke-80, yaitu 
+		<strong>“Umat Rukun dan Sinergi, Indonesia Damai dan Maju”</strong>, 
+		tercermin secara nyata dalam pagelaran ini. Ribuan peserta yang bergerak selaras 
+		menjadi simbol kuat bahwa kerukunan dan sinergi adalah fondasi utama 
+		dalam membangun bangsa yang damai, maju, dan berkeadilan.
+		</p>
+		<br>
+		<figure class="artikel-image">
+		  <img src="images/artikel/tarikolosalhab80.jpeg" alt="Pagelaran Tari Kolosal Kemenag Boyolali">
+		  <figcaption>Pagelaran Tari Kolosal GEMATI Kemenag Boyolali</figcaption>
+		</figure>
+		<p>
+		Melalui kegiatan ini, diharapkan semangat kebersamaan dan nilai-nilai moderasi beragama 
+		semakin tertanam dalam diri seluruh warga madrasah. Pengalaman berpartisipasi dalam 
+		kegiatan berskala besar ini diharapkan mampu menginspirasi peserta didik 
+		untuk terus berprestasi, berkontribusi positif, serta menjadi agen pemersatu di tengah masyarakat.
+		Sebagai penutup, seluruh rangkaian Pagelaran Tari Kolosal GEMATI menjadi refleksi 
+		bahwa seni budaya memiliki peran strategis dalam membangun karakter bangsa. 
+		Semoga partisipasi MTs Prof YPI SYAHDA dalam kegiatan ini membawa keberkahan, 
+		memperkuat semangat pengabdian, serta menjadi amal kebaikan bagi seluruh pihak yang terlibat. 
+		Dengan semangat umat rukun dan sinergi, semoga Indonesia senantiasa damai, maju, dan diridhai Allah SWT. Aamiin.
+		</p>
+	  `
+	}
+
+
+
 
 ];

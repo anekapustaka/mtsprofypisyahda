@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Artikel - MTs Prof YPI SYAHDA</title>
+
+	<!-- SEO -->
+	<meta name="description" content="MTs Prof. YPI Syahda adalah Madrasah Tsanawiyah di Boyolali yang fokus mencetak generasi berakhlak Qur’ani, berilmu, disiplin, dan berdaya saing." />
+	<meta name="keywords" content="MTs, MTs Syahda, YPI Syahda, PPDB MTs, Sekolah Islam, Pendidikan Islam Boyolali, Madrasah Unggulan" />
+	<meta name="author" content="MTs Prof. YPI Syahda" />
+
+	<link rel="canonical" href="https://mtsprofypisyahda.sch.id/" />
+	<meta name="theme-color" content="#0b6b30" />
+
+	<!-- Icons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="MTs Prof. YPI Syahda — Madrasah Unggulan di Boyolali" />
+	<meta property="og:description" content="Madrasah unggulan yang mencetak generasi Qur’ani dan berprestasi." />
+	<meta property="og:image" content="https://mtsprofypisyahda.sch.id/images/logo.png" />
+	<meta property="og:type" content="website" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="style/index.css" />
+	<link rel="stylesheet" href="style/artikel.css" />
+
+</head>
+
+<body>
+	<header>
+	<div class="logo">
+	  <img src="images/logo.png" alt="Logo">
+	  <div class="logo-text">
+		<div class="logo-title">MTs Prof YPI SYAHDA</div>
+		<div class="logo-subtitle">
+		  Dk. Randu, Ds. Temon, Kec. Simo, Kab. Boyolali
+		</div>
+	  </div>
+	</div>
+
+		<div class="menu-toggle" id="menu-toggle">
+			<span></span><span></span><span></span>
+		</div>
+
+		<nav id="navbar">
+			<a href="index.html">Beranda</a>
+			<a href="data-artikel.html">Artikel</a>
+			<a href="informasi.html">Informasi SPMB</a>
+			<a href="daftar.html">Pendaftaran</a>
+			<a href="about.html">Tentang</a>
+		</nav>
+
+		<div class="nav-overlay"></div>
+	</header>
+
+<main>
+	<div class="container">
+
+    <div class="judul">
+      <h2>E-Rapor</h2>
+    </div>
+
+<input type="text" id="nism" placeholder="Masukkan NISM">
+<button onclick="cekRapor()">Lihat Rapor</button>
+
+<div id="hasil"></div>
+
+</div>
+</main>
+
+	<footer>
+		<div class="footer-social">
+			<a href="https://instagram.com/mtsprofypisyahda" target="_blank">
+				<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" height="24">
+			</a>
+			<a href="#">
+				<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24">
+			</a>
+			<a href="mailto:mtsprofypisyahda@gmail.com">
+				<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" width="24" height="24">
+			</a>
+		</div>
+
+		<div class="footer-bottom">
+			&copy; 2025 MTs Prof YPI Syahda — All Rights Reserved
+		</div>
+	</footer>
+	
+<script>
+function cekRapor() {
+  const nism = document.getElementById("nism").value;
+  const hasil = document.getElementById("hasil");
+
+  fetch("PASTE_URL_APPS_SCRIPT_DI_SINI?nism=" + nism)
+    .then(res => res.json())
+    .then(data => {
+      if (data.status === "ok") {
+        hasil.innerHTML = `
+        <div class="card">
+          <h3>${data.nama}</h3>
+          <p>Kelas: ${data.kelas}</p>
+          <p>Semester: ${data.semester}</p>
+          <hr>
+          <p>Matematika: ${data.nilai.matematika}</p>
+          <p>Bahasa Indonesia: ${data.nilai.bahasa}</p>
+          <p>IPA: ${data.nilai.ipa}</p>
+          <p>IPS: ${data.nilai.ips}</p>
+          <p>PAI: ${data.nilai.pai}</p>
+        </div>`;
+      } else {
+        hasil.innerHTML = "<p>❌ Data tidak ditemukan</p>";
+      }
+    });
+}
+</script>
+
+</body>
+</html>
+
