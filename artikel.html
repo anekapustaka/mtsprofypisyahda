@@ -327,38 +327,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Popup Activated");
   });
   
-const pageKey = "artikel-" + window.location.pathname;
-
-let likes = parseInt(localStorage.getItem(pageKey + "-like")) || 0;
-let dislikes = parseInt(localStorage.getItem(pageKey + "-dislike")) || 0;
-
-document.getElementById("likeCount").innerText = likes;
-document.getElementById("dislikeCount").innerText = dislikes;
-
-document.getElementById("likeBtn").onclick = () => {
-  likes++;
-  localStorage.setItem(pageKey + "-like", likes);
-  document.getElementById("likeCount").innerText = likes;
-};
-
-document.getElementById("dislikeBtn").onclick = () => {
-  dislikes++;
-  localStorage.setItem(pageKey + "-dislike", dislikes);
-  document.getElementById("dislikeCount").innerText = dislikes;
-};
-
-document.getElementById("shareBtn").onclick = () => {
-  if (navigator.share) {
-    navigator.share({
-      title: document.title,
-      url: window.location.href
-    });
-  } else {
-    navigator.clipboard.writeText(window.location.href);
-    alert("Link artikel berhasil disalin");
-  }
-};
-
 </script>
 
 </body>
