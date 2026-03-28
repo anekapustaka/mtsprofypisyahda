@@ -728,6 +728,93 @@ const articles = [
 		yang bernilai di sisi Allah SWT. Aamiin.
 		</p>
 	  `
+	},
+	{
+	id: 9,
+	slug: "halal-bihalal-keluarga-besar-mts-prof-ypi-syahda",
+	title: "MTs Prof YPI SYAHDA Gelar Halal Bihalal Keluarga Besar YPI SYAHDA dan Madrasah Pasca Perayaan Idul Fitri",
+	date: "29 Maret 2026",
+	author: "Redaksi MTs Prof YPI Syahda",
+	banner: "images/artikel/halalbihalal1.jpeg",
+	excerpt: "Keluarga besar MTs Prof YPI SYAHDA menyelenggarakan kegiatan Halal Bihalal yang diikuti oleh guru dan tenaga kependidikan sebagai momentum mempererat silaturahmi pasca Hari Raya Idul Fitri.",
+	description: "Kegiatan Halal Bihalal keluarga besar MTs Prof YPI SYAHDA yang diawali dengan sambutan Kepala Madrasah Assoc. Prof. Dr. H. Dasmadi, S.E., M.M., dilanjutkan dengan ikrar halal bihalal, makan bersama, serta sholat Maghrib berjamaah.",
+	keywords: "Halal Bihalal MTs Prof YPI SYAHDA, kegiatan Idul Fitri madrasah, silaturahmi guru madrasah, halal bihalal YPI SYAHDA",
+	tags: [
+	"halal-bihalal",
+	"idul-fitri",
+	"kegiatan-madrasah",
+	"silaturahmi",
+	"berita-syahda"
+	],
+	content: `
+		<p>
+		Keluarga besar <strong>MTs Prof YPI SYAHDA</strong> menyelenggarakan kegiatan 
+		<strong>Halal Bihalal</strong> sebagai momentum untuk mempererat tali silaturahmi 
+		dan memperkuat ukhuwah di antara seluruh civitas madrasah pasca perayaan 
+		<strong>Hari Raya Idul Fitri</strong>. Kegiatan ini diikuti oleh para 
+		<strong>guru dan tenaga kependidikan</strong> dalam suasana penuh kehangatan 
+		dan kebersamaan.
+		</p>
+		<br>
+		<p>
+		Acara diawali dengan <strong>sambutan Kepala Madrasah MTs Prof YPI SYAHDA</strong>, 
+		yaitu <strong>Assoc. Prof. Dr. H. Dasmadi, S.E., M.M.</strong>. Dalam sambutannya, 
+		beliau menyampaikan bahwa momentum Idul Fitri hendaknya dimaknai sebagai waktu 
+		yang tepat untuk memperbaiki hubungan antarsesama, saling memaafkan, serta 
+		memperkuat semangat kebersamaan dalam menjalankan amanah pendidikan.
+		</p>
+		<br>
+		<p>
+		Beliau juga menekankan pentingnya menjaga kekompakan dan sinergi di lingkungan 
+		madrasah, karena keberhasilan sebuah lembaga pendidikan tidak hanya ditentukan 
+		oleh program kerja yang baik, tetapi juga oleh hubungan harmonis dan kerja sama 
+		yang solid antara seluruh unsur yang ada di dalamnya.
+		</p>
+		<br>
+		<p>
+		Setelah sambutan kepala madrasah, kegiatan dilanjutkan dengan 
+		<strong>ikrar Halal Bihalal</strong>. Ikrar tersebut menjadi simbol saling memaafkan 
+		dan memperbaharui komitmen untuk menjaga kebersamaan serta mempererat 
+		persaudaraan di lingkungan madrasah.
+		</p>
+		<br>
+		<p>
+		Suasana penuh kekeluargaan semakin terasa ketika seluruh peserta saling 
+		bersalaman dan bermaafan. Momentum ini menjadi pengingat bahwa kebersamaan 
+		dan keharmonisan merupakan fondasi penting dalam membangun lingkungan kerja 
+		yang positif dan produktif.
+		</p>
+		<br>
+		<p>
+		<figure class="artikel-image">
+		  <img src="images/artikel/halalbihalal2.jpeg" alt="Halal Bihalal MTs Prof YPI Syahda">
+		  <figcaption>Makan Bersama dalam Rangkaian Halal Bihalal MTs Prof YPI SYAHDA</figcaption>
+		</figure>
+		Setelah rangkaian acara inti selesai, kegiatan dilanjutkan dengan 
+		<strong>makan bersama</strong> yang berlangsung dalam suasana santai 
+		dan penuh keakraban. Momen tersebut menjadi kesempatan bagi seluruh 
+		guru dan tenaga kependidikan untuk saling berbincang, mempererat 
+		silaturahmi, serta memperkuat rasa kebersamaan sebagai satu keluarga besar. Rangkaian kegiatan kemudian ditutup dengan pelaksanaan 
+		<strong>sholat Maghrib berjamaah</strong>. Ibadah bersama ini menjadi 
+		penyempurna dari seluruh rangkaian acara, sekaligus sebagai bentuk 
+		ungkapan syukur atas kebersamaan dan nikmat silaturahmi yang diberikan 
+		oleh Allah SWT.
+		</p>
+		<br>
+		<p>
+		Melalui kegiatan Halal Bihalal ini, diharapkan hubungan kekeluargaan 
+		di lingkungan MTs Prof YPI SYAHDA semakin erat serta mampu menumbuhkan 
+		semangat kebersamaan dalam menjalankan tugas dan tanggung jawab 
+		sebagai pendidik dan tenaga kependidikan.
+		</p>
+		<br>
+		<p>
+		Semoga semangat Idul Fitri yang membawa pesan saling memaafkan, 
+		mempererat persaudaraan, dan memperkuat silaturahmi dapat terus 
+		terjaga dalam kehidupan sehari-hari, sehingga seluruh keluarga besar 
+		MTs Prof YPI SYAHDA dapat bersama-sama membangun madrasah yang 
+		lebih maju, harmonis, dan penuh keberkahan. Aamiin.
+		</p>
+		  `
 	}
-	
 ];
