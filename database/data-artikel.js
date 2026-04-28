@@ -816,5 +816,104 @@ const articles = [
 		lebih maju, harmonis, dan penuh keberkahan. Aamiin.
 		</p>
 		  `
-	}
+	},
+	{
+	id: 10,
+	slug: "sosialisasi-spmb-mts-prof-ypi-syahda-di-sd-dan-mi-sekitar",
+	title: "Tim SPMB MTs Prof YPI SYAHDA Laksanakan Sosialisasi ke SD dan MI, Kenalkan Program Madrasah kepada Calon Peserta Didik",
+	date: "10 April 2026",
+	author: "Redaksi MTs Prof YPI Syahda",
+	banner: "images/artikel/sosialisasi2627.jpg",
+	excerpt: "Tim SPMB MTs Prof YPI SYAHDA melaksanakan sosialisasi ke sejumlah SD dan MI di lingkungan sekitar untuk mengenalkan program madrasah kepada calon peserta didik baru.",
+	description: "Kegiatan sosialisasi SPMB MTs Prof YPI SYAHDA yang dilaksanakan di beberapa SD dan MI sekitar lingkungan madrasah, disertai interaksi edukatif dan pembagian hadiah bagi siswa sebagai kenang-kenangan.",
+	keywords: "SPMB MTs Prof YPI SYAHDA, sosialisasi sekolah, promosi madrasah, kegiatan SD MI, penerimaan siswa baru",
+	tags: [
+	"spmb",
+	"sosialisasi",
+	"kegiatan-madrasah",
+	"sd-mi",
+	"berita-syahda"
+	],
+	content: `
+		<p>
+		Dalam rangka memperkenalkan program pendidikan serta membuka kesempatan 
+		bagi calon peserta didik baru, <strong>Tim SPMB MTs Prof YPI SYAHDA</strong> 
+		melaksanakan kegiatan <strong>sosialisasi ke sejumlah Sekolah Dasar (SD) dan Madrasah Ibtidaiyah (MI)</strong> 
+		yang berada di lingkungan sekitar madrasah. Kegiatan ini merupakan bagian 
+		dari upaya strategis madrasah dalam menjaring peserta didik yang memiliki 
+		minat untuk melanjutkan pendidikan di MTs Prof YPI SYAHDA.
+		</p>
+		<br>
+		<p>
+		Sosialisasi dilaksanakan secara langsung di beberapa sekolah dengan 
+		menghadirkan tim dari panitia SPMB yang terdiri dari guru dan tenaga 
+		kependidikan. Dalam kegiatan tersebut, tim memberikan pemaparan terkait 
+		profil madrasah, program unggulan, kegiatan pembelajaran, serta berbagai 
+		fasilitas yang dimiliki oleh MTs Prof YPI SYAHDA.
+		</p>
+		<br>
+		<p>
+		Para siswa terlihat antusias mengikuti kegiatan sosialisasi yang disampaikan 
+		dengan pendekatan komunikatif dan interaktif. Materi yang disampaikan tidak 
+		hanya berupa informasi, tetapi juga dikemas secara menarik agar mudah dipahami 
+		oleh siswa tingkat SD dan MI. Tim SPMB berupaya menghadirkan suasana yang 
+		menyenangkan sehingga siswa dapat mengenal madrasah dengan lebih dekat.
+		</p>
+		<br>
+		<p>
+		<figure class="artikel-image">
+		  <img src="images/artikel/sosialisasi2627-2.jpg" alt="Sosialisasi SPMB MTs Prof YPI Syahda">
+		  <figcaption>Kegiatan Sosialisasi SPMB di SD dan MI sekitar lingkungan madrasah</figcaption>
+		</figure>
+		Salah satu bagian yang paling menarik dalam kegiatan ini adalah sesi 
+		<strong>tanya jawab interaktif</strong> antara pembicara dan siswa. Dalam sesi ini, 
+		siswa diberikan kesempatan untuk menjawab berbagai pertanyaan seputar materi 
+		yang telah disampaikan. Bagi siswa yang mampu menjawab dengan baik, panitia 
+		memberikan <strong>hadiah menarik</strong> sebagai bentuk apresiasi sekaligus 
+		kenang-kenangan dari MTs Prof YPI SYAHDA.
+		</p>
+		<br>
+		<p>
+		Pembagian hadiah tersebut tidak hanya menjadi daya tarik dalam kegiatan, 
+		tetapi juga bertujuan untuk meningkatkan semangat dan partisipasi siswa 
+		dalam mengikuti sosialisasi. Selain itu, hadiah yang diberikan diharapkan 
+		dapat menjadi kenangan yang membekas bagi siswa serta memperkenalkan 
+		MTs Prof YPI SYAHDA secara lebih dekat di lingkungan sekolah asal mereka.
+		</p>
+		<br>
+		<p>
+		Kegiatan sosialisasi ini juga menjadi ajang silaturahmi antara MTs Prof YPI SYAHDA 
+		dengan pihak sekolah dasar dan madrasah ibtidaiyah di sekitarnya. Hubungan baik 
+		yang terjalin diharapkan dapat terus terjaga dan berkembang sebagai bentuk 
+		kerja sama dalam dunia pendidikan.
+		</p>
+		<br>
+		<p>
+		Melalui kegiatan ini, MTs Prof YPI SYAHDA berharap dapat memberikan informasi 
+		yang jelas dan komprehensif kepada calon peserta didik mengenai pentingnya 
+		melanjutkan pendidikan ke jenjang yang lebih tinggi, khususnya di madrasah 
+		yang mengintegrasikan pendidikan umum dan nilai-nilai keislaman.
+		</p>
+		<br>
+		<p>
+		Sosialisasi SPMB ini menjadi salah satu langkah nyata dalam memperkenalkan 
+		identitas dan keunggulan madrasah kepada masyarakat luas. Diharapkan melalui 
+		kegiatan ini, semakin banyak siswa yang tertarik untuk bergabung dan menjadi 
+		bagian dari keluarga besar MTs Prof YPI SYAHDA.
+		</p>
+		<br>
+		<p>
+		<figure class="artikel-image">
+		  <img src="images/artikel/sosialisasi2627-3.jpg" alt="Sosialisasi SPMB MTs Prof YPI Syahda">
+		  <figcaption>Kegiatan Sosialisasi SPMB di SD dan MI sekitar lingkungan madrasah</figcaption>
+		</figure>
+		Dengan semangat memberikan pelayanan pendidikan terbaik, MTs Prof YPI SYAHDA 
+		terus berkomitmen untuk mencetak generasi yang tidak hanya unggul dalam 
+		akademik, tetapi juga memiliki akhlak mulia, keimanan yang kuat, serta 
+		kepedulian sosial yang tinggi. Semoga kegiatan sosialisasi ini menjadi 
+		langkah awal yang baik dalam menyambut peserta didik baru yang berkualitas 
+		dan berprestasi. Aamiin.
+		</p>
+	  `
+}
 ];
