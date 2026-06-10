@@ -915,5 +915,120 @@ const articles = [
 		dan berprestasi. Aamiin.
 		</p>
 	  `
-}
+	},
+	{
+	id: 11,
+	slug: "tebar-manfaat-iduladha-1447h-ypi-syahda-dan-bmm-yogyakarta",
+	title: "Tebar Manfaat Iduladha 1447 H, YPI Syahda Bersama BMM Yogyakarta Sembelih Sapi dan Kambing",
+	date: "28 Mei 2026",
+	author: "Redaksi MTs Prof YPI Syahda",
+	banner: "images/artikel/kurban1.jpeg",
+	excerpt: "Yayasan Pendidikan Islam Syahda bersama BMM Yogyakarta melaksanakan penyembelihan hewan kurban berupa 1 ekor sapi dan 3 ekor kambing yang kemudian didistribusikan kepada masyarakat sekitar, guru MTs Prof YPI SYAHDA, anak yatim piatu, dan jamaah masjid.",
+	description: "Kegiatan penyembelihan hewan kurban Iduladha 1447 H hasil kerja sama Yayasan Pendidikan Islam Syahda dan BMM Yogyakarta sebagai bentuk kepedulian sosial, syiar Islam, dan penguatan nilai-nilai berbagi kepada masyarakat.",
+	keywords: "Iduladha 1447 H, kurban YPI Syahda, BMM Yogyakarta, MTs Prof YPI Syahda, penyembelihan hewan kurban, distribusi daging kurban, kegiatan sosial Islam",
+	tags: [
+		"iduladha",
+		"kurban",
+		"ypi-syahda",
+		"bmm-yogyakarta",
+		"kegiatan-keagamaan",
+		"berita-syahda"
+	],
+	content: `
+		<p>
+		Dalam rangka memperingati <strong>Hari Raya Iduladha 1447 Hijriah</strong>,
+		<strong>Yayasan Pendidikan Islam (YPI) Syahda</strong> bekerja sama dengan
+		<strong>Baitul Maal Muamalat (BMM) Yogyakarta</strong> melaksanakan kegiatan
+		penyembelihan hewan kurban pada tanggal <strong>28 Mei 2026</strong>.
+		Kegiatan ini menjadi salah satu bentuk implementasi nilai-nilai keislaman,
+		kepedulian sosial, dan semangat berbagi kepada sesama yang senantiasa
+		ditanamkan dalam lingkungan pendidikan YPI Syahda.
+		</p>
+		<br>
+		<p>
+		Pada pelaksanaan kurban tahun ini, YPI Syahda bersama BMM Yogyakarta
+		menyembelih <strong>1 ekor sapi dan 3 ekor kambing</strong>. Hewan kurban tersebut
+		merupakan amanah yang dipercayakan untuk disalurkan kepada masyarakat sebagai
+		wujud nyata kepedulian terhadap sesama, khususnya bagi mereka yang membutuhkan.
+		</p>
+		<br>
+		<figure class="artikel-image">
+		  <img src="images/artikel/kurban5.jpeg" alt="Penyembelihan Hewan Kurban YPI Syahda">
+		  <figcaption>Proses penyembelihan hewan kurban Iduladha 1447 H di lingkungan YPI Syahda</figcaption>
+		</figure>
+		<p>
+		Proses penyembelihan dilaksanakan sesuai dengan syariat Islam dan standar
+		penyembelihan halal. Penyembelihan dilakukan oleh
+		<strong>Bapak Surachman</strong> yang telah
+		<strong>menjadi JULEHA (Juru Sembelih Halal)</strong>,
+		sehingga seluruh rangkaian kegiatan dapat berlangsung dengan baik,
+		aman, dan sesuai dengan ketentuan syariat.
+		</p>
+		<br>
+		<div class="artikel-media-left">
+		  <img src="images/artikel/kurban5.jpeg"
+		       alt="Kegiatan Penyembelihan Kurban YPI Syahda">
+		  Pelaksanaan kurban melibatkan panitia dari Yayasan Pendidikan Islam Syahda,
+		  guru dan tenaga kependidikan MTs Prof YPI SYAHDA, serta relawan yang bekerja
+		  sama untuk memastikan seluruh proses berjalan lancar. Mulai dari persiapan,
+		  penyembelihan, pencacahan, hingga pengemasan daging dilakukan secara gotong
+		  royong dengan penuh semangat kebersamaan.
+		</div>
+		<br>
+		<p>
+		Kegiatan kurban tidak hanya menjadi sarana ibadah, tetapi juga menjadi
+		momentum mempererat silaturahmi dan menumbuhkan nilai-nilai kepedulian sosial
+		di lingkungan yayasan. Melalui kegiatan ini, seluruh pihak yang terlibat dapat
+		merasakan pentingnya berbagi kebahagiaan kepada sesama, khususnya pada momentum
+		Hari Raya Iduladha yang penuh berkah.
+		</p>
+		<br>
+		<figure class="artikel-image">
+		  <img src="images/artikel/kurban3.jpeg" alt="Pengemasan Daging Kurban">
+		  <figcaption>Panitia melakukan proses pencacahan dan pengemasan daging kurban</figcaption>
+		</figure>
+		<p>
+		Setelah proses penyembelihan selesai, panitia melanjutkan kegiatan dengan
+		pencacahan dan pengemasan daging kurban untuk memudahkan proses distribusi.
+		Seluruh tahapan dilakukan secara tertib agar daging yang diterima masyarakat
+		tetap terjaga kualitas dan kebersihannya.
+		</p>
+		<br>
+		<div class="artikel-media-right">
+		  <img src="images/artikel/kurban2.jpg"
+		       alt="Distribusi Daging Kurban YPI Syahda">
+		  Daging kurban kemudian didistribusikan kepada masyarakat sekitar lingkungan
+		  yayasan, guru dan tenaga kependidikan MTs Prof YPI SYAHDA, anak yatim piatu,
+		  serta sejumlah jamaah masjid. Distribusi dilakukan sebagai bentuk kepedulian
+		  sosial dan upaya menghadirkan manfaat kurban yang dapat dirasakan secara luas
+		  oleh masyarakat.
+		</div>
+		<br>
+		<p>
+		Kerja sama antara YPI Syahda dan BMM Yogyakarta dalam pelaksanaan kurban ini
+		menjadi bukti bahwa kolaborasi yang baik dapat menghadirkan manfaat yang lebih
+		besar bagi masyarakat. Selain menjalankan syariat Islam, kegiatan ini juga
+		menjadi sarana pendidikan karakter bagi peserta didik untuk belajar tentang
+		keikhlasan, kepedulian, dan pentingnya berbagi kepada sesama.
+		</p>
+		<br>
+		<p>
+		Yayasan Pendidikan Islam Syahda mengucapkan terima kasih kepada seluruh pihak
+		yang telah berpartisipasi dan mendukung terselenggaranya kegiatan kurban tahun
+		ini, khususnya kepada BMM Yogyakarta, panitia pelaksana, para donatur, serta
+		masyarakat yang turut membantu kelancaran kegiatan. Semoga seluruh amal ibadah
+		dan kebaikan yang telah dilakukan mendapatkan balasan terbaik dari Allah SWT.
+		Aamiin Ya Rabbal 'Alamin.
+		</p>
+		<br>
+		<p>
+		Semangat berbagi dan kepedulian yang tercermin dalam kegiatan kurban ini
+		diharapkan dapat terus tumbuh dan menjadi budaya positif di lingkungan
+		Yayasan Pendidikan Islam Syahda. Melalui kegiatan-kegiatan sosial dan
+		keagamaan seperti ini, YPI Syahda berkomitmen untuk terus menghadirkan
+		manfaat bagi masyarakat serta mencetak generasi yang berakhlak mulia,
+		peduli sesama, dan berjiwa Qurani.
+		</p>
+	`
+	}
 ];
