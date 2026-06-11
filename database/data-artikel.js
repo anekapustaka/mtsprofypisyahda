@@ -965,15 +965,11 @@ const articles = [
 		aman, dan sesuai dengan ketentuan syariat.
 		</p>
 		<br>
-		<div class="artikel-media-left">
-		  <img src="images/artikel/kurban5.jpeg"
-		       alt="Kegiatan Penyembelihan Kurban YPI Syahda">
 		  Pelaksanaan kurban melibatkan panitia dari Yayasan Pendidikan Islam Syahda,
 		  guru dan tenaga kependidikan MTs Prof YPI SYAHDA, serta relawan yang bekerja
 		  sama untuk memastikan seluruh proses berjalan lancar. Mulai dari persiapan,
 		  penyembelihan, pencacahan, hingga pengemasan daging dilakukan secara gotong
 		  royong dengan penuh semangat kebersamaan.
-		</div>
 		<br>
 		<p>
 		Kegiatan kurban tidak hanya menjadi sarana ibadah, tetapi juga menjadi
@@ -995,7 +991,7 @@ const articles = [
 		</p>
 		<br>
 		<div class="artikel-media-right">
-		  <img src="images/artikel/kurban2.jpg"
+		  <img src="images/artikel/kurban2.jpeg"
 		       alt="Distribusi Daging Kurban YPI Syahda">
 		  Daging kurban kemudian didistribusikan kepada masyarakat sekitar lingkungan
 		  yayasan, guru dan tenaga kependidikan MTs Prof YPI SYAHDA, anak yatim piatu,
@@ -1030,5 +1026,106 @@ const articles = [
 		peduli sesama, dan berjiwa Qurani.
 		</p>
 	`
-	}
+	},
+	{
+	id: 12,
+	slug: "kunjungan-dan-silaturahmi-takmir-masjid-manisrenggo-ke-ypi-syahda",
+	title: "Takmir Masjid Desa Manisrenggo Laksanakan Silaturahmi dan Kunjungan ke YPI Syahda",
+	date: "15 Juni 2026",
+	author: "Redaksi MTs Prof YPI Syahda",
+	banner: "images/artikel/manisrenggo1.jpeg",
+	excerpt: "Takmir Masjid Desa Manisrenggo melaksanakan kunjungan silaturahmi ke YPI Syahda untuk mengenal lingkungan pondok pesantren, fasilitas pendidikan, serta program pembinaan santri baru tahun ajaran 2026/2027.",
+	description: "Kegiatan silaturahmi dan kunjungan Takmir Masjid Desa Manisrenggo ke YPI Syahda dalam rangka mempererat ukhuwah Islamiyah, mengenalkan lingkungan pondok pesantren, fasilitas pendidikan, serta program pembinaan santri baru.",
+	keywords: "Takmir Masjid Manisrenggo, YPI Syahda, Pondok Pesantren Syahda, MTs Prof YPI Syahda, santri baru, silaturahmi, kunjungan pondok pesantren",
+	tags: [
+	"silaturahmi",
+	"takmir-masjid",
+	"pondok-pesantren",
+	"santri-baru",
+	"kegiatan-keagamaan",
+	"berita-syahda"
+	],
+	content: `
+		<p>
+		Dalam rangka mempererat ukhuwah Islamiyah dan menjalin hubungan yang baik dengan masyarakat,
+		<strong>Takmir Masjid Desa Manisrenggo, Klaten</strong> melaksanakan kegiatan silaturahmi dan kunjungan
+		ke lingkungan <strong>Yayasan Pendidikan Islam (YPI) Syahda</strong>. Kegiatan ini disambut hangat
+		oleh jajaran pengurus yayasan, dewan guru, serta pengelola pondok pesantren dan MTs Prof YPI SYAHDA.
+		</p>
+		<br>
+		<p>
+		Kunjungan ini menjadi momentum yang sangat baik untuk memperkenalkan berbagai program pendidikan
+		yang dimiliki oleh YPI Syahda. Selain sebagai ajang silaturahmi, kegiatan ini juga menjadi sarana
+		untuk mengenalkan lingkungan pondok pesantren, program pembinaan santri, serta berbagai fasilitas
+		pendidikan yang mendukung proses belajar mengajar.
+		</p>
+		<br>
+		<p>
+		<figure class="artikel-image">
+		  <img src="images/artikel/manisrenggo2.jpeg" alt="Kunjungan Takmir Masjid Manisrenggo">
+		  <figcaption>Silaturahmi Takmir Masjid Desa Manisrenggo bersama keluarga besar YPI Syahda</figcaption>
+		</figure>
+		Dalam sesi pertemuan, pihak yayasan menyampaikan profil lembaga serta visi pendidikan yang
+		berorientasi pada pembentukan generasi berakhlak Qurani, berilmu, berdaya saing, dan memiliki
+		wawasan keislaman yang kuat. Para tamu juga mendapatkan penjelasan mengenai berbagai program
+		unggulan yang dijalankan oleh pondok pesantren dan MTs Prof YPI SYAHDA.
+		</p>
+		<br>
+		<p>
+		Salah satu topik yang menjadi perhatian dalam kegiatan tersebut adalah pembahasan mengenai
+		<strong>santri baru tahun ajaran 2026/2027</strong>. Pihak yayasan menjelaskan berbagai program
+		pembinaan yang akan diberikan kepada santri baru mulai dari pengenalan lingkungan, pembiasaan
+		ibadah, kegiatan tahfidz Al-Qur'an, hingga pembentukan karakter dan kedisiplinan selama berada
+		di lingkungan pondok pesantren.
+		</p>
+		<br>
+		<div class="artikel-media-left">
+		  <img src="images/artikel/manisrenggo3.jpeg"
+		       alt="Pengenalan Lingkungan Pondok Pesantren">
+		  Para peserta kunjungan diajak berkeliling untuk melihat secara langsung lingkungan pondok
+		  pesantren. Kegiatan ini bertujuan agar para tamu dapat mengenal lebih dekat suasana kehidupan
+		  santri sehari-hari serta berbagai sarana yang digunakan dalam mendukung pembelajaran dan
+		  pembinaan keagamaan.
+		</div>
+		<br>
+		<p>
+		Selama kunjungan berlangsung, rombongan juga diperkenalkan dengan berbagai fasilitas yang dimiliki
+		oleh pondok pesantren dan madrasah. Fasilitas tersebut meliputi ruang kelas, perpustakaan,
+		laboratorium komputer, masjid, area asrama, lapangan olahraga, serta lingkungan belajar yang
+		nyaman dan kondusif bagi peserta didik.
+		</p>
+		<br>
+		<p>
+		<figure class="artikel-image">
+		  <img src="images/artikel/manisrenggo4.jpeg" alt="Fasilitas MTs Prof YPI Syahda">
+		  <figcaption>Pengenalan fasilitas pendidikan dan lingkungan belajar MTs Prof YPI SYAHDA</figcaption>
+		</figure>
+		Pihak Takmir Masjid Desa Manisrenggo memberikan apresiasi terhadap perkembangan sarana dan
+		prasarana yang dimiliki oleh YPI Syahda. Mereka menilai bahwa lingkungan pendidikan yang nyaman,
+		bersih, dan islami menjadi salah satu faktor penting dalam mendukung pembentukan karakter peserta didik.
+		</p>
+		<br>
+		<div class="artikel-media-right">
+		  <img src="images/artikel/manisrenggo5.jpeg"
+		       alt="Diskusi Program Santri Baru">
+		  Diskusi berlangsung dalam suasana hangat dan penuh kekeluargaan. Berbagai masukan serta saran
+		  disampaikan sebagai bentuk dukungan terhadap peningkatan kualitas pendidikan dan pembinaan
+		  generasi muda di lingkungan YPI Syahda.
+		</div>
+		<br>
+		<p>
+		Kegiatan silaturahmi ini juga menjadi sarana untuk memperkuat kerja sama antara lembaga pendidikan,
+		tokoh agama, dan masyarakat. Sinergi yang terjalin diharapkan dapat memberikan kontribusi positif
+		dalam membangun generasi muda yang memiliki ilmu pengetahuan, akhlak mulia, dan kepedulian sosial
+		yang tinggi.
+		</p>
+		<br>
+		<p>
+		Melalui kegiatan ini, YPI Syahda berharap hubungan baik dengan masyarakat dapat terus terjalin dan
+		berkembang. Dengan dukungan berbagai pihak, YPI Syahda berkomitmen untuk terus meningkatkan kualitas
+		layanan pendidikan dan pembinaan santri demi mencetak generasi yang unggul, religius, dan siap
+		menghadapi tantangan masa depan.
+		</p>
+	`
+}
 ];
