@@ -532,6 +532,124 @@
   </div>
 </section>
 
+<!-- ===========================================
+     STATISTIK PENGUNJUNG WEBSITE
+=========================================== -->
+<script type="module" src="script/visitor.js"></script>
+
+<section id="visitor-stats" class="fade-in">
+
+    <div class="judul">
+        <h2>Statistik Pengunjung Website</h2>
+        <p>Pantau perkembangan pengunjung website MTs Prof. YPI Syahda secara realtime.</p>
+    </div>
+
+    <div class="stats-wrapper">
+
+        <!-- Statistik -->
+        <div class="stats-card">
+
+            <div class="stats-grid">
+
+                <div class="stat-box">
+                    <div class="stat-icon">👤</div>
+                    <div class="stat-title">Hari Ini</div>
+                    <div class="stat-value" id="todayVisitors">0</div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-title">Bulan Ini</div>
+                    <div class="stat-value" id="monthVisitors">0</div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">🗓️</div>
+                    <div class="stat-title">Tahun Ini</div>
+                    <div class="stat-value" id="yearVisitors">0</div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-title">Total Pengunjung</div>
+                    <div class="stat-value" id="allVisitors">0</div>
+                </div>
+
+            </div>
+
+            <div class="stats-footer">
+                Terakhir diperbarui :
+                <strong id="lastUpdate">-</strong>
+            </div>
+
+        </div>
+
+        <!-- Lokasi -->
+        <div class="stats-card location-card">
+
+            <h3>📍 Lokasi Pengunjung</h3>
+
+            <div class="location-list" id="locationList">
+
+                <div class="location-item">
+                    <span class="location-name">Memuat...</span>
+                    <span class="location-count">-</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- Statistik Tambahan -->
+
+    <div class="stats-wrapper">
+
+        <!-- Browser -->
+
+        <div class="stats-card">
+
+            <h3 style="color:#0b6b30;margin-bottom:20px;">
+                🌐 Browser Pengunjung
+            </h3>
+
+            <div class="location-list" id="browserList">
+
+                <div class="location-item">
+                    <span class="location-name">Memuat...</span>
+                    <span class="location-count">-</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Device -->
+
+        <div class="stats-card">
+
+            <h3 style="color:#0b6b30;margin-bottom:20px;">
+                💻 Perangkat
+            </h3>
+
+            <div class="location-list" id="deviceList">
+
+                <div class="location-item">
+                    <span class="location-name">Memuat...</span>
+                    <span class="location-count">-</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-social">

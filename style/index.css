@@ -1497,6 +1497,183 @@ nav.active ~ .nav-overlay {
 }
 
 /* ===============================
+   STATISTIK PENGUNJUNG WEBSITE
+================================*/
+
+#visitor-stats {
+  padding: 60px 5%;
+  background: linear-gradient(
+    180deg,
+    rgba(248, 255, 248, 0) 0%,
+    rgba(238, 255, 238, 0.8) 25%,
+    rgba(228, 255, 228, 0.9) 50%,
+    rgba(238, 255, 238, 0.8) 75%,
+    rgba(248, 255, 248, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#visitor-stats .judul {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#visitor-stats .judul h2 {
+  font-size: 2rem;
+  color: #0b6b30;
+  margin-bottom: 8px;
+}
+
+#visitor-stats .judul p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.stats-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.stats-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.stat-box {
+  background: #f8fff8;
+  border: 1.5px solid #cce8cc;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #0b6b30;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.stat-title {
+  color: #666;
+  font-size: .95rem;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  color: #0b6b30;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.location-card h3 {
+  color: #0b6b30;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.location-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.location-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fff8;
+  border: 1.5px solid #cce8cc;
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: .25s;
+}
+
+.location-item:hover {
+  background: #e8f8e8;
+}
+
+.location-name {
+  font-weight: 600;
+  color: #0b6b30;
+}
+
+.location-count {
+  font-weight: bold;
+  color: #333;
+}
+
+.stats-footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #666;
+  font-size: .9rem;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  .stats-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #visitor-stats {
+    padding: 45px 5%;
+  }
+
+  #visitor-stats .judul h2 {
+    font-size: 1.7rem;
+  }
+
+  .stats-card {
+    padding: 22px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box {
+    padding: 20px;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* ===============================
    FOOTER
 ================================*/
 footer {
