@@ -535,7 +535,7 @@
 <!-- ===========================================
      STATISTIK PENGUNJUNG WEBSITE
 =========================================== -->
-<script type="module" src="script/visitor.js"></script>
+
 
 <section id="visitor-stats" class="fade-in">
 
@@ -645,7 +645,30 @@
             </div>
 
         </div>
+		
+		<div class="stat-box">
+			<div class="stat-icon">🟢</div>
+			<div class="stat-title">Online</div>
+			<div class="stat-value" id="onlineVisitors">0</div>
+		</div>
+		
+		<br>
 
+		<h3 style="color:#0b6b30;margin-bottom:15px;">
+		📌 Provinsi
+		</h3>
+
+		<div class="location-list" id="provinceList">
+
+			<div class="location-item">
+
+				<span class="location-name">Memuat...</span>
+
+				<span class="location-count">-</span>
+
+			</div>
+
+		</div>
     </div>
 
 </section>
@@ -678,6 +701,8 @@
     <button id="popup-close">Tutup</button>
   </div>
 </div>
+
+  <script type="module" src="script/visitor.js"></script>
 
   <script>
     let currentSlide = 0;
