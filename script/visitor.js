@@ -144,15 +144,19 @@ async function renderStatistic(){
 }
 
 
+function setText(id, value) {
 
-function setText(id,value){
+    const el = document.getElementById(id);
 
-    const el=document.getElementById(id);
+    if (!el) return;
 
-    if(el){
+    if (typeof value === "number") {
 
-        el.textContent =
-            Number(value).toLocaleString("id-ID");
+        el.textContent = value.toLocaleString("id-ID");
+
+    } else {
+
+        el.textContent = value;
 
     }
 
@@ -174,27 +178,31 @@ async function collectVisitorInfo(){
 
         const city = data.city || "Unknown";
 
+        const province = data.region || "Unknown";
+
         const browser = detectBrowser();
 
         const device = detectDevice();
 
-        await increase("country",country);
+        await increase("country", country);
 
-        await increase("city",city);
+        await increase("city", city);
 
-        await increase("browser",browser);
+        await increase("province", province);
 
-        await increase("device",device);
+        await increase("browser", browser);
+
+        await increase("device", device);
 
         renderLocation();
+
+        renderProvince();
 
         renderBrowser();
 
         renderDevice();
 
-    }
-
-    catch(e){
+    }catch(e){
 
         console.log(e);
 
@@ -295,6 +303,43 @@ async function renderLocation(){
 }
 
 
+// =====================================
+// RENDER PROVINSI
+// =====================================
+
+async function renderProvince(){
+
+    const list = await readCollection("province");
+
+    const box = document.getElementById("provinceList");
+
+    if(!box) return;
+
+    if(list.length===0){
+
+        box.innerHTML=`
+        <div class="location-item">
+            <span class="location-name">Belum ada data</span>
+            <span class="location-count">0</span>
+        </div>`;
+
+        return;
+
+    }
+
+    box.innerHTML="";
+
+    list.slice(0,10).forEach(item=>{
+
+        box.innerHTML+=`
+        <div class="location-item">
+            <span class="location-name">${item.id}</span>
+            <span class="location-count">${Number(item.total).toLocaleString("id-ID")}</span>
+        </div>`;
+
+    });
+
+}
 
 // =====================================
 // RENDER BROWSER
@@ -386,6 +431,8 @@ setInterval(async()=>{
 
     await renderLocation();
 
+    await renderProvince();
+
     await renderBrowser();
 
     await renderDevice();
@@ -398,12 +445,14 @@ setInterval(async()=>{
 // LOAD PERTAMA
 // =====================================
 
-window.addEventListener("load",async()=>{
+window.addEventListener("load", async()=>{
 
-    await renderStatistic();
+    await renderStatisticAnimated();
 
     await renderLocation();
-
+	
+    await renderProvince();
+	
     await renderBrowser();
 
     await renderDevice();
@@ -416,35 +465,37 @@ window.addEventListener("load",async()=>{
 // ANIMASI ANGKA
 // =====================================
 
-function animateValue(id,end){
+function animateValue(id, end){
 
-    const el=document.getElementById(id);
+    const el = document.getElementById(id);
 
     if(!el) return;
 
-    const start=0;
+    end = Number(end);
 
-    const duration=700;
+    let current = 0;
 
-    const step=Math.ceil(end/40);
+    const duration = 800;
 
-    let current=0;
+    const frame = 30;
 
-    const timer=setInterval(()=>{
+    const increment = Math.max(1, Math.ceil(end / frame));
 
-        current+=step;
+    const timer = setInterval(()=>{
 
-        if(current>=end){
+        current += increment;
 
-            current=end;
+        if(current >= end){
+
+            current = end;
 
             clearInterval(timer);
 
         }
 
-        el.textContent=current.toLocaleString("id-ID");
+        el.textContent = current.toLocaleString("id-ID");
 
-    },duration/40);
+    }, duration / frame);
 
 }
 
@@ -456,26 +507,34 @@ function animateValue(id,end){
 
 async function renderStatisticAnimated(){
 
-    const today=await getTotal("daily",day);
+    const today = await getTotal("daily", day);
 
-    const monthCount=await getTotal("monthly",month);
+    const monthCount = await getTotal("monthly", month);
 
-    const yearCount=await getTotal("yearly",year);
+    const yearCount = await getTotal("yearly", year);
 
-    const all=await getTotal("summary","alltime");
+    const all = await getTotal("summary", "alltime");
 
-    animateValue("todayVisitors",today);
+    animateValue("todayVisitors", today);
 
-    animateValue("monthVisitors",monthCount);
+    animateValue("monthVisitors", monthCount);
 
-    animateValue("yearVisitors",yearCount);
+    animateValue("yearVisitors", yearCount);
 
-    animateValue("allVisitors",all);
+    animateValue("allVisitors", all);
 
-    setText(
-        "lastUpdate",
-        new Date().toLocaleString("id-ID")
-    );
+    const waktu = new Date().toLocaleString("id-ID", {
+
+        day: "2-digit",
+        month: "long",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+
+    });
+
+    setText("lastUpdate", waktu);
 
 }
 

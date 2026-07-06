@@ -543,84 +543,127 @@
         <p>Pantau perkembangan pengunjung website MTs Prof. YPI Syahda secara realtime.</p>
     </div>
 
-    <!-- BARIS 1 -->
+    <div class="visitor-dashboard">
 
-    <div class="stats-wrapper">
+        <!-- =======================
+             STATISTIK UTAMA
+        ======================== -->
 
-        <!-- Statistik -->
+        <div class="stats-grid">
 
-        <div class="stats-card">
-
-            <div class="stats-grid">
-
-                <div class="stat-box">
-                    <div class="stat-icon">👤</div>
-                    <div class="stat-title">Hari Ini</div>
-                    <div class="stat-value" id="todayVisitors">0</div>
-                </div>
-
-                <div class="stat-box">
-                    <div class="stat-icon">📅</div>
-                    <div class="stat-title">Bulan Ini</div>
-                    <div class="stat-value" id="monthVisitors">0</div>
-                </div>
-
-                <div class="stat-box">
-                    <div class="stat-icon">🗓️</div>
-                    <div class="stat-title">Tahun Ini</div>
-                    <div class="stat-value" id="yearVisitors">0</div>
-                </div>
-
-                <div class="stat-box">
-                    <div class="stat-icon">🌍</div>
-                    <div class="stat-title">Total Pengunjung</div>
-                    <div class="stat-value" id="allVisitors">0</div>
-                </div>
-
+            <div class="stat-box">
+                <div class="stat-icon">👤</div>
+                <div class="stat-title">Hari Ini</div>
+                <div class="stat-value" id="todayVisitors">0</div>
             </div>
 
-            <div class="stats-footer">
-                Terakhir diperbarui :
-                <strong id="lastUpdate">-</strong>
+            <div class="stat-box">
+                <div class="stat-icon">📅</div>
+                <div class="stat-title">Bulan Ini</div>
+                <div class="stat-value" id="monthVisitors">0</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-icon">🗓️</div>
+                <div class="stat-title">Tahun Ini</div>
+                <div class="stat-value" id="yearVisitors">0</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-icon">🌍</div>
+                <div class="stat-title">Total Pengunjung</div>
+                <div class="stat-value" id="allVisitors">0</div>
+            </div>
+
+            <div class="stat-box online-box">
+                <div class="stat-icon">🟢</div>
+                <div class="stat-title">Online</div>
+                <div class="stat-value" id="onlineVisitors">0</div>
             </div>
 
         </div>
 
-        <!-- ONLINE -->
+        <!-- =======================
+             INFORMASI PENGUNJUNG
+        ======================== -->
 
-        <div class="stats-card online-card">
+        <div class="info-grid">
 
-            <div class="online-icon">🟢</div>
+            <!-- Lokasi -->
 
-            <div class="online-title">
-                Pengunjung Online
+            <div class="info-card">
+
+                <h3>📍 Lokasi Pengunjung</h3>
+
+                <div class="location-list" id="locationList">
+
+                    <div class="location-item">
+
+                        <span class="location-name">Memuat...</span>
+
+                        <span class="location-count">-</span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="online-value" id="onlineVisitors">
-                0
+            <!-- Provinsi -->
+
+            <div class="info-card">
+
+                <h3>🗺️ Provinsi</h3>
+
+                <div class="location-list" id="provinceList">
+
+                    <div class="location-item">
+
+                        <span class="location-name">Memuat...</span>
+
+                        <span class="location-count">-</span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>Pengunjung yang sedang membuka website saat ini.</p>
+            <!-- Browser -->
 
-        </div>
+            <div class="info-card">
 
-    </div>
+                <h3>🌐 Browser</h3>
 
-    <!-- BARIS 2 -->
+                <div class="location-list" id="browserList">
 
-    <div class="stats-wrapper stats-four">
+                    <div class="location-item">
 
-        <div class="stats-card">
+                        <span class="location-name">Memuat...</span>
 
-            <h3>📍 Lokasi Pengunjung</h3>
+                        <span class="location-count">-</span>
 
-            <div class="location-list" id="locationList">
+                    </div>
 
-                <div class="location-item">
+                </div>
 
-                    <span class="location-name">Memuat...</span>
+            </div>
 
-                    <span class="location-count">-</span>
+            <!-- Device -->
+
+            <div class="info-card">
+
+                <h3>💻 Perangkat</h3>
+
+                <div class="location-list" id="deviceList">
+
+                    <div class="location-item">
+
+                        <span class="location-name">Memuat...</span>
+
+                        <span class="location-count">-</span>
+
+                    </div>
 
                 </div>
 
@@ -628,57 +671,15 @@
 
         </div>
 
-        <div class="stats-card">
+        <!-- =======================
+             FOOTER
+        ======================== -->
 
-            <h3>🗺️ Provinsi</h3>
+        <div class="update-box">
 
-            <div class="location-list" id="provinceList">
+            <span>🕒 Terakhir diperbarui</span>
 
-                <div class="location-item">
-
-                    <span class="location-name">Memuat...</span>
-
-                    <span class="location-count">-</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="stats-card">
-
-            <h3>🌐 Browser</h3>
-
-            <div class="location-list" id="browserList">
-
-                <div class="location-item">
-
-                    <span class="location-name">Memuat...</span>
-
-                    <span class="location-count">-</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="stats-card">
-
-            <h3>💻 Perangkat</h3>
-
-            <div class="location-list" id="deviceList">
-
-                <div class="location-item">
-
-                    <span class="location-name">Memuat...</span>
-
-                    <span class="location-count">-</span>
-
-                </div>
-
-            </div>
+            <strong id="lastUpdate">Memuat...</strong>
 
         </div>
 

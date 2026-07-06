@@ -1496,9 +1496,9 @@ nav.active ~ .nav-overlay {
   }
 }
 
-/* =====================================================
-   STATISTIK WEBSITE
-===================================================== */
+/* ===================================================
+   STATISTIK PENGUNJUNG WEBSITE
+=================================================== */
 
 #visitor-stats{
     padding:70px 5%;
@@ -1515,6 +1515,10 @@ nav.active ~ .nav-overlay {
     align-items:center;
 }
 
+/* =======================
+   JUDUL
+======================= */
+
 #visitor-stats .judul{
     text-align:center;
     margin-bottom:35px;
@@ -1528,222 +1532,327 @@ nav.active ~ .nav-overlay {
 
 #visitor-stats .judul p{
     color:#666;
+    font-size:1rem;
 }
 
-/* BARIS */
+/* =======================
+   DASHBOARD
+======================= */
 
-.stats-wrapper{
+.visitor-dashboard{
+
     width:100%;
-    max-width:1200px;
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:24px;
-    margin-bottom:24px;
-}
+    max-width:1250px;
 
-.stats-four{
-    grid-template-columns:repeat(4,1fr);
-}
-
-/* CARD */
-
-.stats-card{
     background:#fff;
-    border-radius:18px;
-    padding:28px;
-    border:1px solid #d8edd8;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
-    transition:.3s;
+
+    border-radius:20px;
+
+    border:1px solid #d7edd7;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    padding:35px;
+
 }
 
-.stats-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
-}
-
-/* GRID */
+/* =======================
+   STATISTIK
+======================= */
 
 .stats-grid{
+
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+
+    grid-template-columns:repeat(5,1fr);
+
     gap:18px;
+
+    margin-bottom:30px;
+
 }
 
-/* BOX */
-
 .stat-box{
+
     background:#f8fff8;
-    border:1px solid #d4edd4;
+
+    border:1px solid #cfe8cf;
+
     border-radius:15px;
-    padding:24px;
+
+    padding:22px;
+
     text-align:center;
+
     transition:.3s;
+
 }
 
 .stat-box:hover{
-    background:#eefbee;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.online-box{
+
+    background:#eefcf1;
+
 }
 
 .stat-icon{
+
     width:58px;
+
     height:58px;
+
     margin:auto;
+
+    margin-bottom:15px;
+
     border-radius:50%;
+
     background:#0b6b30;
+
     color:#fff;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    font-size:25px;
-    margin-bottom:14px;
+
+    font-size:26px;
+
 }
 
 .stat-title{
-    color:#777;
+
     font-size:.95rem;
+
+    color:#666;
+
 }
 
 .stat-value{
+
     margin-top:8px;
+
     font-size:2rem;
+
     font-weight:bold;
+
     color:#0b6b30;
+
 }
 
-/* ONLINE */
+/* =======================
+   GRID INFORMASI
+======================= */
 
-.online-card{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
 }
 
-.online-icon{
-    width:75px;
-    height:75px;
-    border-radius:50%;
-    background:#0b6b30;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:34px;
-    margin-bottom:20px;
+/* =======================
+   CARD
+======================= */
+
+.info-card{
+
+    background:#fcfffc;
+
+    border:1px solid #d8edd8;
+
+    border-radius:15px;
+
+    padding:22px;
+
 }
 
-.online-title{
-    font-size:1.2rem;
-    font-weight:700;
+.info-card h3{
+
     color:#0b6b30;
-}
 
-.online-value{
-    font-size:3rem;
-    color:#0b6b30;
-    font-weight:bold;
-    margin:10px 0;
-}
+    font-size:1.15rem;
 
-.online-card p{
-    color:#666;
-    line-height:1.6;
-}
-
-/* LIST */
-
-.stats-card h3{
-    color:#0b6b30;
     margin-bottom:18px;
-    font-size:1.2rem;
+
 }
+
+/* =======================
+   LIST
+======================= */
 
 .location-list{
+
     display:flex;
+
     flex-direction:column;
+
     gap:12px;
+
 }
 
 .location-item{
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     background:#f8fff8;
-    border:1px solid #d5edd5;
+
+    border:1px solid #d5e9d5;
+
     border-radius:10px;
+
     padding:12px 15px;
+
     transition:.25s;
+
 }
 
 .location-item:hover{
-    background:#ecfaec;
+
+    background:#eefbee;
+
 }
 
 .location-name{
+
     color:#0b6b30;
+
     font-weight:600;
+
 }
 
 .location-count{
-    font-weight:bold;
+
     color:#333;
+
+    font-weight:bold;
+
 }
 
-.stats-footer{
-    margin-top:24px;
+/* =======================
+   FOOTER
+======================= */
+
+.update-box{
+
+    margin-top:30px;
+
+    border:1px solid #d6ead6;
+
+    border-radius:12px;
+
+    background:#f8fff8;
+
+    padding:15px;
+
     text-align:center;
-    color:#777;
+
+}
+
+.update-box span{
+
+    display:block;
+
+    color:#666;
+
     font-size:.9rem;
+
 }
 
-/* RESPONSIVE */
+.update-box strong{
 
-@media(max-width:1100px){
+    display:block;
 
-.stats-four{
-    grid-template-columns:repeat(2,1fr);
+    margin-top:6px;
+
+    color:#0b6b30;
+
+    font-size:1rem;
+
 }
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media(max-width:1200px){
+
+    .stats-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
 
 }
 
 @media(max-width:900px){
 
-.stats-wrapper{
-    grid-template-columns:1fr;
-}
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
 
 }
 
 @media(max-width:768px){
 
-#visitor-stats{
-    padding:55px 5%;
-}
+    #visitor-stats{
 
-.stats-grid{
-    grid-template-columns:1fr;
-}
+        padding:55px 5%;
 
-.stats-four{
-    grid-template-columns:1fr;
-}
+    }
 
-.stats-card{
-    padding:22px;
-}
+    .visitor-dashboard{
 
-.online-value{
-    font-size:2.5rem;
-}
+        padding:22px;
 
-.stat-value{
-    font-size:1.8rem;
-}
+    }
 
-#visitor-stats .judul h2{
-    font-size:1.7rem;
-}
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-box{
+
+        padding:20px;
+
+    }
+
+    .stat-value{
+
+        font-size:1.7rem;
+
+    }
+
+    #visitor-stats .judul h2{
+
+        font-size:1.7rem;
+
+    }
 
 }
 /* ===============================
