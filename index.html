@@ -536,7 +536,6 @@
      STATISTIK PENGUNJUNG WEBSITE
 =========================================== -->
 
-
 <section id="visitor-stats" class="fade-in">
 
     <div class="judul">
@@ -544,9 +543,12 @@
         <p>Pantau perkembangan pengunjung website MTs Prof. YPI Syahda secara realtime.</p>
     </div>
 
+    <!-- BARIS 1 -->
+
     <div class="stats-wrapper">
 
         <!-- Statistik -->
+
         <div class="stats-card">
 
             <div class="stats-grid">
@@ -584,91 +586,102 @@
 
         </div>
 
-        <!-- Lokasi -->
-        <div class="stats-card location-card">
+        <!-- ONLINE -->
+
+        <div class="stats-card online-card">
+
+            <div class="online-icon">🟢</div>
+
+            <div class="online-title">
+                Pengunjung Online
+            </div>
+
+            <div class="online-value" id="onlineVisitors">
+                0
+            </div>
+
+            <p>Pengunjung yang sedang membuka website saat ini.</p>
+
+        </div>
+
+    </div>
+
+    <!-- BARIS 2 -->
+
+    <div class="stats-wrapper stats-four">
+
+        <div class="stats-card">
 
             <h3>📍 Lokasi Pengunjung</h3>
 
             <div class="location-list" id="locationList">
 
                 <div class="location-item">
+
                     <span class="location-name">Memuat...</span>
+
                     <span class="location-count">-</span>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+        <div class="stats-card">
 
-    <br><br>
+            <h3>🗺️ Provinsi</h3>
 
-    <!-- Statistik Tambahan -->
+            <div class="location-list" id="provinceList">
 
-    <div class="stats-wrapper">
+                <div class="location-item">
 
-        <!-- Browser -->
+                    <span class="location-name">Memuat...</span>
+
+                    <span class="location-count">-</span>
+
+                </div>
+
+            </div>
+
+        </div>
 
         <div class="stats-card">
 
-            <h3 style="color:#0b6b30;margin-bottom:20px;">
-                🌐 Browser Pengunjung
-            </h3>
+            <h3>🌐 Browser</h3>
 
             <div class="location-list" id="browserList">
 
                 <div class="location-item">
+
                     <span class="location-name">Memuat...</span>
+
                     <span class="location-count">-</span>
+
                 </div>
 
             </div>
 
         </div>
 
-        <!-- Device -->
-
         <div class="stats-card">
 
-            <h3 style="color:#0b6b30;margin-bottom:20px;">
-                💻 Perangkat
-            </h3>
+            <h3>💻 Perangkat</h3>
 
             <div class="location-list" id="deviceList">
 
                 <div class="location-item">
+
                     <span class="location-name">Memuat...</span>
+
                     <span class="location-count">-</span>
+
                 </div>
 
             </div>
 
         </div>
-		
-		<div class="stat-box">
-			<div class="stat-icon">🟢</div>
-			<div class="stat-title">Online</div>
-			<div class="stat-value" id="onlineVisitors">0</div>
-		</div>
-		
-		<br>
 
-		<h3 style="color:#0b6b30;margin-bottom:15px;">
-		📌 Provinsi
-		</h3>
-
-		<div class="location-list" id="provinceList">
-
-			<div class="location-item">
-
-				<span class="location-name">Memuat...</span>
-
-				<span class="location-count">-</span>
-
-			</div>
-
-		</div>
     </div>
 
 </section>
